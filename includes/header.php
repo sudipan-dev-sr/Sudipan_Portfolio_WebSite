@@ -54,8 +54,8 @@
         </div> -->
 
 
-   <?php
-// XAMPP base path
+<?php
+
 define('BASE_URL', '/Portfolio/Sudipan_Portfolio_WebSite/');
 ?>
 <!DOCTYPE html>
@@ -63,6 +63,7 @@ define('BASE_URL', '/Portfolio/Sudipan_Portfolio_WebSite/');
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?= BASE_URL ?>assets/favicon.png">
     <title>Eliana Portfolio - PrebuiltUI</title>
 
     <!-- Tailwind CSS (compiled) -->
@@ -75,6 +76,22 @@ define('BASE_URL', '/Portfolio/Sudipan_Portfolio_WebSite/');
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ovo&display=swap" rel="stylesheet">
+
+    <style>
+/* ===== SCROLL REVEAL ANIMATION ===== */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+    will-change: transform, opacity;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+</style>
+
 </head>
 
 <body class="font-Outfit leading-8 dark:bg-darkTheme dark:text-white">
@@ -92,15 +109,19 @@ define('BASE_URL', '/Portfolio/Sudipan_Portfolio_WebSite/');
     </p>
 
     <!-- Logo -->
-    <a href="<?= BASE_URL ?>">
+    <!-- <a href="<?= BASE_URL ?>">
         <img src="<?= BASE_URL ?>assets/logo.png" alt="Logo" class="w-28 cursor-pointer mr-14 dark:hidden" />
         <img src="<?= BASE_URL ?>assets/logo_dark.png" alt="Logo" class="w-28 cursor-pointer mr-14 hidden dark:block" />
+    </a> -->    
+
+    <a href="<?= BASE_URL ?>" class="text-2xl font-bold cursor-pointer mr-14 dark:text-white">
+        Sudipan Mandal   .
     </a>
 
     <!-- Desktop Menu -->
     <ul id="navLink"
         class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 font-Ovo dark:border dark:border-white/30 dark:bg-transparent">
-        <li><a class="hover:text-gray-500 dark:hover:text-gray-300 transition" href="<?= BASE_URL ?>#top">Home</a></li>
+        <li><a class="hover:text-gray-500 dark:hover:text-gray-300 transition" href="<?= BASE_URL ?>">Home</a></li>
         <li><a class="hover:text-gray-500 dark:hover:text-gray-300 transition" href="<?= BASE_URL ?>pages/about.php">About me</a></li>
         <li><a class="hover:text-gray-500 dark:hover:text-gray-300 transition" href="<?= BASE_URL ?>#services">Services</a></li>
         <li><a class="hover:text-gray-500 dark:hover:text-gray-300 transition" href="<?= BASE_URL ?>#work">My Work</a></li>

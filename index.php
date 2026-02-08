@@ -24,10 +24,15 @@ include 'includes/header.php';
 
     <img src="<?= BASE_URL ?>assets/profile-img.png" class="rounded-full w-32" />
 
-    <h3 class="flex items-end gap-2 text-xl md:text-2xl mb-3 font-Ovo">
+    <!-- <h3 class="flex items-end gap-2 text-xl md:text-2xl mb-3 font-Ovo">
         Hi! I&apos;m Sudipan Mandal
         <img src="<?= BASE_URL ?>assets/hand-icon.png" class="w-6 mb-1" />
+    </h3> -->
+    <h3 class="flex items-end gap-2 text-xl md:text-2xl mb-3 font-Ovo">
+        <span id="typing-text"></span>
+        <img src="<?= BASE_URL ?>assets/hand-icon.png" class="w-6 mb-1" />
     </h3>
+
 
     <h1 class="text-3xl sm:text-6xl lg:text-[66px] font-Ovo">
         Full Stack Developer based in Kolkata.
@@ -92,5 +97,24 @@ include 'includes/header.php';
     </div>
 
 <script src="<?= BASE_URL ?>script.js"></script>
+<script>
+    const text = "Hi! I'm Sudipan Mandal";
+    const speed = 80; // typing speed (ms)
+    let index = 0;
+
+    function typeEffect() {
+        if (index < text.length) {
+            document.getElementById("typing-text").innerHTML += text.charAt(index);
+            index++;
+            setTimeout(typeEffect, speed);
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", typeEffect);
+</script>
+
 </body>
 </html>
+<?php
+include 'includes/header.php';
+?>

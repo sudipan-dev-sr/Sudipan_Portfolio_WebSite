@@ -36,3 +36,45 @@ window.addEventListener('scroll', () => {
         navLink.classList.add('bg-white', 'shadow-sm', 'bg-opacity-50', 'dark:border', 'dark:border-white/30', "dark:bg-transparent");
     }
 })
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    /* ===== REVEAL ANIMATION ===== */
+    const reveals = document.querySelectorAll(".reveal");
+
+    const revealObserver = new IntersectionObserver(
+        (entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("active");
+                    observer.unobserve(entry.target);
+                }
+            });
+        },
+        { threshold: 0.15 }
+    );
+
+    reveals.forEach(el => revealObserver.observe(el));
+
+});
+document.addEventListener("DOMContentLoaded", () => {
+
+    /* ===== TYPING ANIMATION ===== */
+    const typingElements = document.querySelectorAll(".typing");
+
+    typingElements.forEach(el => {
+        const text = el.getAttribute("data-text");
+        let index = 0;
+        el.textContent = "";
+
+        const typeInterval = setInterval(() => {
+            if (index < text.length) {
+                el.textContent += text.charAt(index);
+                index++;
+            } else {
+                clearInterval(typeInterval);
+            }
+        }, 70);
+    });
+
+});
