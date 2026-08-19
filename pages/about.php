@@ -1,106 +1,134 @@
 <?php
-include __DIR__ . '/../includes/header.php';
+require_once __DIR__ . '/../includes/header.php';
 ?>
 
-<!-- ----- about me section ------ -->
-<div id="about" class="w-full px-[12%] py-10 scroll-mt-20">
+<!-- ================= DEDICATED ABOUT PAGE ================= -->
+<main class="pt-32 pb-20 px-5 sm:px-8 lg:px-[8%] min-h-screen">
+    <div class="max-w-6xl mx-auto">
 
-    <h4 class="text-center mb-2 text-lg font-Ovo">Introduction</h4>
-    <h2 class="text-center text-5xl font-Ovo">About me</h2>
+        <!-- Breadcrumb / Back Link -->
+        <div class="mb-8">
+            <a href="<?= BASE_URL ?>" class="inline-flex items-center gap-2 text-xs font-semibold text-purple-600 dark:text-purple-400 hover:underline">
+                <i class="fa-solid fa-arrow-left"></i>
+                Back to Home Portfolio
+            </a>
+        </div>
 
-    <div class="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
+        <div class="text-center mb-16">
+            <span class="gradient-badge mb-2">Detailed Profile</span>
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 dark:text-white tracking-tight">
+                About <span class="gradient-text">Sudipan Mandal</span>
+            </h1>
+            <p class="mt-3 text-slate-600 dark:text-slate-400 max-w-2xl mx-auto text-sm sm:text-base">
+                Full Stack PHP Developer specializing in enterprise backend architecture, RESTful API design, and AI-enabled software solutions.
+            </p>
+        </div>
 
-        <!-- Profile Image -->
-        <div class="max-w-max mx-auto relative">
-            <img src="<?= BASE_URL ?>assets/user-image.png"
-                 alt="User profile image"
-                 class="w-64 sm:w-80 rounded-3xl max-w-none">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-20">
+            <!-- Left Avatar -->
+            <div class="lg:col-span-5 flex justify-center">
+                <div class="glass-card p-4 rounded-3xl relative max-w-sm group">
+                    <img src="<?= BASE_URL ?>assets/user-image.png" 
+                         alt="Sudipan Mandal" 
+                         class="w-full h-auto rounded-2xl object-cover" />
+                    
+                    <div class="mt-4 p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700">
+                        <div class="flex items-center justify-between text-xs font-bold text-slate-700 dark:text-slate-200">
+                            <span>Status:</span>
+                            <span class="text-emerald-500 flex items-center gap-1">
+                                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                                Active PHP Developer
+                            </span>
+                        </div>
+                        <div class="flex items-center justify-between text-xs font-medium text-slate-500 dark:text-slate-400 mt-1">
+                            <span>Organization:</span>
+                            <span class="text-slate-900 dark:text-white font-semibold">Vxplore Technologies</span>
+                        </div>
+                        <div class="flex items-center justify-between text-xs font-medium text-slate-500 dark:text-slate-400 mt-1">
+                            <span>Location:</span>
+                            <span>Kolkata, West Bengal</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-            <div
-                class="bg-white w-1/2 aspect-square absolute right-0 bottom-0 rounded-full translate-x-1/4 translate-y-1/3 shadow-[0_4px_55px_rgba(149,0,162,0.15)] flex items-center justify-center">
+            <!-- Right Content -->
+            <div class="lg:col-span-7 flex flex-col gap-6">
+                <div>
+                    <h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-3">
+                        Engineering Philosophy & Mindset
+                    </h2>
+                    <p class="text-slate-600 dark:text-slate-300 text-sm sm:text-base leading-relaxed mb-4">
+                        I am a Full Stack PHP Developer with hands-on enterprise experience in backend systems, database performance, and application support. 
+                        My focus is on writing clean, modular, and maintainable code that delivers measurable business value.
+                    </p>
+                    <p class="text-slate-600 dark:text-slate-300 text-sm sm:text-base leading-relaxed">
+                        With solid foundations in <strong>PHP, CodeIgniter 4, Laravel, and MySQL</strong>, I build structured MVC solutions, integrate modern AI capabilities (OpenAI API), and craft responsive, intuitive interfaces using <strong>JavaScript, React, Tailwind CSS, and Bootstrap</strong>.
+                    </p>
+                </div>
 
-                <img src="<?= BASE_URL ?>assets/circular-text.png"
-                     alt="Circular text"
-                     class="w-full animate-spin_slow">
+                <!-- 3 Pillars Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    <div class="glass-card p-4 rounded-xl border border-slate-200 dark:border-slate-800">
+                        <i class="fa-solid fa-code text-purple-600 dark:text-purple-400 text-xl mb-2"></i>
+                        <h3 class="font-bold text-slate-900 dark:text-white text-sm">Languages</h3>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">PHP 8, JavaScript (ES6+), Python, HTML5, CSS3</p>
+                    </div>
 
-                <img src="<?= BASE_URL ?>assets/dev-icon.png"
-                     alt="Developer icon"
-                     class="w-1/4 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                    <div class="glass-card p-4 rounded-xl border border-slate-200 dark:border-slate-800">
+                        <i class="fa-solid fa-graduation-cap text-indigo-600 dark:text-indigo-400 text-xl mb-2"></i>
+                        <h3 class="font-bold text-slate-900 dark:text-white text-sm">Education</h3>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">BCA from MAKAUT (2021–2024, CGPA 7.27)</p>
+                    </div>
+
+                    <div class="glass-card p-4 rounded-xl border border-slate-200 dark:border-slate-800">
+                        <i class="fa-solid fa-laptop-code text-amber-500 text-xl mb-2"></i>
+                        <h3 class="font-bold text-slate-900 dark:text-white text-sm">Projects</h3>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">5+ Production and AI-Powered Applications</p>
+                    </div>
+                </div>
+
+                <!-- Tools & Ecosystem -->
+                <div>
+                    <h3 class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-3">
+                        Core Development Tools
+                    </h3>
+                    <div class="flex flex-wrap items-center gap-3">
+                        <span class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl glass-card text-xs font-medium text-slate-700 dark:text-slate-200">
+                            <i class="fa-brands fa-git-alt text-orange-500 text-base"></i> Git & GitHub
+                        </span>
+                        <span class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl glass-card text-xs font-medium text-slate-700 dark:text-slate-200">
+                            <i class="fa-solid fa-terminal text-blue-500 text-base"></i> VS Code
+                        </span>
+                        <span class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl glass-card text-xs font-medium text-slate-700 dark:text-slate-200">
+                            <i class="fa-solid fa-paper-plane text-orange-400 text-base"></i> Postman
+                        </span>
+                        <span class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl glass-card text-xs font-medium text-slate-700 dark:text-slate-200">
+                            <i class="fa-solid fa-server text-yellow-500 text-base"></i> XAMPP / Apache
+                        </span>
+                        <span class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl glass-card text-xs font-medium text-slate-700 dark:text-slate-200">
+                            <i class="fa-brands fa-figma text-pink-500 text-base"></i> Figma
+                        </span>
+                    </div>
+                </div>
+
+                <div class="pt-4 flex flex-wrap gap-4">
+                    <a href="<?= BASE_URL ?>#contact" class="btn-primary">
+                        <span>Get in Touch</span>
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                    <a href="<?= BASE_URL ?>assets/Resume/Sudipan_Mandal_FullStack_PHP_Developer_CV.pdf" target="_blank" class="btn-outline">
+                        <i class="fa-solid fa-file-pdf text-purple-600"></i>
+                        <span>Download Complete CV</span>
+                    </a>
+                </div>
             </div>
         </div>
 
-        <!-- Content -->
-        <div class="flex-1">
-
-            <p class="mb-10 max-w-2xl font-Ovo">
-                I am an experienced Frontend Developer with over a decade of professional expertise.
-                I have collaborated with prestigious organizations and contributed to scalable,
-                high-quality digital products.
-            </p>
-
-            <!-- Cards -->
-            <ul class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
-
-                <li
-                    class="border border-gray-300 dark:border-white/30 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:hover:shadow-white/80 dark:hover:bg-darkHover/50">
-
-                    <img src="<?= BASE_URL ?>assets/code-icon.png" alt="Languages icon" class="w-7 mt-3 dark:hidden">
-                    <img src="<?= BASE_URL ?>assets/code-icon-dark.png" alt="Languages icon" class="w-7 mt-3 hidden dark:block">
-
-                    <h3 class="my-4 font-semibold text-gray-700 dark:text-white">Languages</h3>
-                    <p class="text-gray-600 text-sm dark:text-white/80">
-                        HTML, CSS, JavaScript, React, Next.js
-                    </p>
-                </li>
-
-                <li
-                    class="border border-gray-300 dark:border-white/30 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:hover:shadow-white/80 dark:hover:bg-darkHover/50">
-
-                    <img src="<?= BASE_URL ?>assets/edu-icon.png" alt="Education icon" class="w-7 mt-3 dark:hidden">
-                    <img src="<?= BASE_URL ?>assets/edu-icon-dark.png" alt="Education icon" class="w-7 mt-3 hidden dark:block">
-
-                    <h3 class="my-4 font-semibold text-gray-700 dark:text-white">Education</h3>
-                    <p class="text-gray-600 text-sm dark:text-white/80">
-                        B.Tech in Computer Science
-                    </p>
-                </li>
-
-                <li
-                    class="border border-gray-300 dark:border-white/30 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:hover:shadow-white/80 dark:hover:bg-darkHover/50">
-
-                    <img src="<?= BASE_URL ?>assets/project-icon.png" alt="Projects icon" class="w-7 mt-3 dark:hidden">
-                    <img src="<?= BASE_URL ?>assets/project-icon-dark.png" alt="Projects icon" class="w-7 mt-3 hidden dark:block">
-
-                    <h3 class="my-4 font-semibold text-gray-700 dark:text-white">Projects</h3>
-                    <p class="text-gray-600 text-sm dark:text-white/80">
-                        Built more than 5 projects
-                    </p>
-                </li>
-
-            </ul>
-
-            <!-- Tools -->
-            <h4 class="my-6 text-gray-700 font-Ovo dark:text-white/80">Tools I use</h4>
-
-            <ul class="flex items-center gap-3 sm:gap-5">
-
-                <?php
-                $tools = ['vscode', 'firebase', 'mongodb', 'figma', 'git'];
-                foreach ($tools as $tool):
-                ?>
-                    <li
-                        class="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-300 dark:border-white/30 rounded-lg cursor-pointer hover:-translate-y-1 duration-500">
-                        <img src="<?= BASE_URL ?>assets/<?= $tool ?>.png"
-                             alt="<?= ucfirst($tool) ?>"
-                             class="w-5 sm:w-7">
-                    </li>
-                <?php endforeach; ?>
-
-            </ul>
-
-        </div>
     </div>
-</div>
-<script src="<?= BASE_URL ?>script.js"></script>
-</body>
-</html>
+</main>
+
+<?php
+require_once __DIR__ . '/../includes/footer.php';
+?>
+
