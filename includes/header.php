@@ -30,8 +30,9 @@ require_once __DIR__ . '/config.php';
     <!-- Tailwind CSS (compiled) -->
     <link rel="stylesheet" href="<?= BASE_URL ?>output.css">
 
-    <!-- Theme Initialization Script (Prevents FOUC) -->
+    <!-- Theme Initialization Script (Prevents FOUC) & Base URL Global -->
     <script>
+        window.BASE_URL = '<?= BASE_URL ?>';
         if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
             document.documentElement.classList.add('dark');
         } else {
@@ -74,13 +75,13 @@ require_once __DIR__ . '/config.php';
 
             <!-- Desktop Navigation Links (Pill Style) -->
             <ul id="navLink" class="hidden lg:flex items-center gap-1 xl:gap-2 rounded-full px-5 py-2 glass-card shadow-sm border border-slate-200/80 dark:border-slate-800 font-medium text-sm text-slate-600 dark:text-slate-300">
-                <li><a class="nav-item px-3.5 py-1.5 rounded-full hover:text-purple-600 dark:hover:text-purple-400 hover:bg-purple-50/70 dark:hover:bg-slate-800 transition" href="#top">Home</a></li>
-                <li><a class="nav-item px-3.5 py-1.5 rounded-full hover:text-purple-600 dark:hover:text-purple-400 hover:bg-purple-50/70 dark:hover:bg-slate-800 transition" href="#about">About</a></li>
-                <li><a class="nav-item px-3.5 py-1.5 rounded-full hover:text-purple-600 dark:hover:text-purple-400 hover:bg-purple-50/70 dark:hover:bg-slate-800 transition" href="#experience">Experience</a></li>
-                <li><a class="nav-item px-3.5 py-1.5 rounded-full hover:text-purple-600 dark:hover:text-purple-400 hover:bg-purple-50/70 dark:hover:bg-slate-800 transition" href="#services">Services</a></li>
-                <li><a class="nav-item px-3.5 py-1.5 rounded-full hover:text-purple-600 dark:hover:text-purple-400 hover:bg-purple-50/70 dark:hover:bg-slate-800 transition" href="#skills">Skills</a></li>
-                <li><a class="nav-item px-3.5 py-1.5 rounded-full hover:text-purple-600 dark:hover:text-purple-400 hover:bg-purple-50/70 dark:hover:bg-slate-800 transition" href="#work">Projects</a></li>
-                <li><a class="nav-item px-3.5 py-1.5 rounded-full hover:text-purple-600 dark:hover:text-purple-400 hover:bg-purple-50/70 dark:hover:bg-slate-800 transition" href="#contact">Contact</a></li>
+                <li><a class="nav-item px-3.5 py-1.5 rounded-full hover:text-purple-600 dark:hover:text-purple-400 hover:bg-purple-50/70 dark:hover:bg-slate-800 transition" href="<?= BASE_URL ?>#top">Home</a></li>
+                <li><a class="nav-item px-3.5 py-1.5 rounded-full hover:text-purple-600 dark:hover:text-purple-400 hover:bg-purple-50/70 dark:hover:bg-slate-800 transition" href="<?= BASE_URL ?>pages/about.php">About</a></li>
+                <li><a class="nav-item px-3.5 py-1.5 rounded-full hover:text-purple-600 dark:hover:text-purple-400 hover:bg-purple-50/70 dark:hover:bg-slate-800 transition" href="<?= BASE_URL ?>#experience">Experience</a></li>
+                <li><a class="nav-item px-3.5 py-1.5 rounded-full hover:text-purple-600 dark:hover:text-purple-400 hover:bg-purple-50/70 dark:hover:bg-slate-800 transition" href="<?= BASE_URL ?>pages/services.php">Services</a></li>
+                <li><a class="nav-item px-3.5 py-1.5 rounded-full hover:text-purple-600 dark:hover:text-purple-400 hover:bg-purple-50/70 dark:hover:bg-slate-800 transition" href="<?= BASE_URL ?>pages/portfolio.php">Projects</a></li>
+                <li><a class="nav-item px-3.5 py-1.5 rounded-full hover:text-purple-600 dark:hover:text-purple-400 hover:bg-purple-50/70 dark:hover:bg-slate-800 transition" href="<?= BASE_URL ?>pages/blog.php">Blog</a></li>
+                <li><a class="nav-item px-3.5 py-1.5 rounded-full hover:text-purple-600 dark:hover:text-purple-400 hover:bg-purple-50/70 dark:hover:bg-slate-800 transition" href="<?= BASE_URL ?>pages/contact.php">Contact</a></li>
             </ul>
 
             <!-- Right Controls -->
@@ -94,7 +95,7 @@ require_once __DIR__ . '/config.php';
                 </button>
 
                 <!-- Let's Talk CTA -->
-                <a href="#contact" 
+                <a href="<?= BASE_URL ?>pages/contact.php" 
                    class="hidden sm:inline-flex items-center gap-2 px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider text-white bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 shadow-md shadow-purple-500/20 hover:shadow-purple-500/35 transition-all">
                     <span>Let's Talk</span>
                     <i class="fa-solid fa-arrow-right text-[10px]"></i>
@@ -135,13 +136,13 @@ require_once __DIR__ . '/config.php';
             </div>
 
             <ul class="flex flex-col gap-2 mt-6 font-medium text-slate-700 dark:text-slate-200">
-                <li><a href="#top" onclick="closeMenu()" class="flex items-center gap-3 px-4 py-2.5 rounded-xl hover:bg-purple-50 dark:hover:bg-slate-800/80 hover:text-purple-600 dark:hover:text-purple-400 transition"><i class="fa-solid fa-house w-5 text-purple-500"></i> Home</a></li>
-                <li><a href="#about" onclick="closeMenu()" class="flex items-center gap-3 px-4 py-2.5 rounded-xl hover:bg-purple-50 dark:hover:bg-slate-800/80 hover:text-purple-600 dark:hover:text-purple-400 transition"><i class="fa-solid fa-user w-5 text-indigo-500"></i> About</a></li>
-                <li><a href="#experience" onclick="closeMenu()" class="flex items-center gap-3 px-4 py-2.5 rounded-xl hover:bg-purple-50 dark:hover:bg-slate-800/80 hover:text-purple-600 dark:hover:text-purple-400 transition"><i class="fa-solid fa-briefcase w-5 text-amber-500"></i> Experience</a></li>
-                <li><a href="#services" onclick="closeMenu()" class="flex items-center gap-3 px-4 py-2.5 rounded-xl hover:bg-purple-50 dark:hover:bg-slate-800/80 hover:text-purple-600 dark:hover:text-purple-400 transition"><i class="fa-solid fa-cubes w-5 text-pink-500"></i> Services</a></li>
-                <li><a href="#skills" onclick="closeMenu()" class="flex items-center gap-3 px-4 py-2.5 rounded-xl hover:bg-purple-50 dark:hover:bg-slate-800/80 hover:text-purple-600 dark:hover:text-purple-400 transition"><i class="fa-solid fa-code w-5 text-cyan-500"></i> Skills</a></li>
-                <li><a href="#work" onclick="closeMenu()" class="flex items-center gap-3 px-4 py-2.5 rounded-xl hover:bg-purple-50 dark:hover:bg-slate-800/80 hover:text-purple-600 dark:hover:text-purple-400 transition"><i class="fa-solid fa-laptop-code w-5 text-emerald-500"></i> Projects</a></li>
-                <li><a href="#contact" onclick="closeMenu()" class="flex items-center gap-3 px-4 py-2.5 rounded-xl hover:bg-purple-50 dark:hover:bg-slate-800/80 hover:text-purple-600 dark:hover:text-purple-400 transition"><i class="fa-solid fa-envelope w-5 text-purple-500"></i> Contact</a></li>
+                <li><a href="<?= BASE_URL ?>#top" onclick="closeMenu()" class="flex items-center gap-3 px-4 py-2.5 rounded-xl hover:bg-purple-50 dark:hover:bg-slate-800/80 hover:text-purple-600 dark:hover:text-purple-400 transition"><i class="fa-solid fa-house w-5 text-purple-500"></i> Home</a></li>
+                <li><a href="<?= BASE_URL ?>pages/about.php" onclick="closeMenu()" class="flex items-center gap-3 px-4 py-2.5 rounded-xl hover:bg-purple-50 dark:hover:bg-slate-800/80 hover:text-purple-600 dark:hover:text-purple-400 transition"><i class="fa-solid fa-user w-5 text-indigo-500"></i> About</a></li>
+                <li><a href="<?= BASE_URL ?>#experience" onclick="closeMenu()" class="flex items-center gap-3 px-4 py-2.5 rounded-xl hover:bg-purple-50 dark:hover:bg-slate-800/80 hover:text-purple-600 dark:hover:text-purple-400 transition"><i class="fa-solid fa-briefcase w-5 text-amber-500"></i> Experience</a></li>
+                <li><a href="<?= BASE_URL ?>pages/services.php" onclick="closeMenu()" class="flex items-center gap-3 px-4 py-2.5 rounded-xl hover:bg-purple-50 dark:hover:bg-slate-800/80 hover:text-purple-600 dark:hover:text-purple-400 transition"><i class="fa-solid fa-cubes w-5 text-pink-500"></i> Services</a></li>
+                <li><a href="<?= BASE_URL ?>pages/portfolio.php" onclick="closeMenu()" class="flex items-center gap-3 px-4 py-2.5 rounded-xl hover:bg-purple-50 dark:hover:bg-slate-800/80 hover:text-purple-600 dark:hover:text-purple-400 transition"><i class="fa-solid fa-laptop-code w-5 text-emerald-500"></i> Projects</a></li>
+                <li><a href="<?= BASE_URL ?>pages/blog.php" onclick="closeMenu()" class="flex items-center gap-3 px-4 py-2.5 rounded-xl hover:bg-purple-50 dark:hover:bg-slate-800/80 hover:text-purple-600 dark:hover:text-purple-400 transition"><i class="fa-solid fa-newspaper w-5 text-cyan-500"></i> Blog</a></li>
+                <li><a href="<?= BASE_URL ?>pages/contact.php" onclick="closeMenu()" class="flex items-center gap-3 px-4 py-2.5 rounded-xl hover:bg-purple-50 dark:hover:bg-slate-800/80 hover:text-purple-600 dark:hover:text-purple-400 transition"><i class="fa-solid fa-envelope w-5 text-purple-500"></i> Contact</a></li>
             </ul>
         </div>
 

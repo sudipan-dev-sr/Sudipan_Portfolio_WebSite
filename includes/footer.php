@@ -18,13 +18,13 @@
                 </a>
                 
                 <p class="text-xs sm:text-sm text-slate-400 max-w-md leading-relaxed">
-                    Full Stack PHP Developer with hands-on experience in CodeIgniter 4, Laravel, MySQL, RESTful APIs, and OpenAI integrations. Building scalable, secure, and user-centric web applications.
+                    Junior Engineer & Full Stack Developer building the IMITERRA MRV Platform at EELAB CARBON. Specializing in Node.js, Strapi (Headless CMS), TypeScript, JavaScript, PostgreSQL, PHP 8, CodeIgniter 4, Laravel, and RESTful APIs.
                 </p>
 
                 <!-- Live Status Badge -->
                 <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950/50 border border-emerald-500/30 text-emerald-400 text-xs">
                     <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                    <span>Open for Opportunities & Collaborations</span>
+                    <span>Open for Technical Collaborations & Opportunities</span>
                 </div>
             </div>
 
@@ -34,13 +34,13 @@
                     Quick Links
                 </h4>
                 <ul class="space-y-2 text-xs sm:text-sm font-medium">
-                    <li><a href="#top" class="hover:text-purple-400 transition flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[10px] text-purple-500"></i> Home</a></li>
-                    <li><a href="#about" class="hover:text-purple-400 transition flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[10px] text-purple-500"></i> About</a></li>
-                    <li><a href="#experience" class="hover:text-purple-400 transition flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[10px] text-purple-500"></i> Experience</a></li>
-                    <li><a href="#services" class="hover:text-purple-400 transition flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[10px] text-purple-500"></i> Services</a></li>
-                    <li><a href="#skills" class="hover:text-purple-400 transition flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[10px] text-purple-500"></i> Skills</a></li>
-                    <li><a href="#work" class="hover:text-purple-400 transition flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[10px] text-purple-500"></i> Projects</a></li>
-                    <li><a href="#contact" class="hover:text-purple-400 transition flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[10px] text-purple-500"></i> Contact</a></li>
+                    <li><a href="<?= BASE_URL ?>#top" class="hover:text-purple-400 transition flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[10px] text-purple-500"></i> Home</a></li>
+                    <li><a href="<?= BASE_URL ?>pages/about.php" class="hover:text-purple-400 transition flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[10px] text-purple-500"></i> About</a></li>
+                    <li><a href="<?= BASE_URL ?>#experience" class="hover:text-purple-400 transition flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[10px] text-purple-500"></i> Experience</a></li>
+                    <li><a href="<?= BASE_URL ?>pages/services.php" class="hover:text-purple-400 transition flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[10px] text-purple-500"></i> Services</a></li>
+                    <li><a href="<?= BASE_URL ?>pages/portfolio.php" class="hover:text-purple-400 transition flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[10px] text-purple-500"></i> Projects</a></li>
+                    <li><a href="<?= BASE_URL ?>pages/blog.php" class="hover:text-purple-400 transition flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[10px] text-purple-500"></i> Tech Blog</a></li>
+                    <li><a href="<?= BASE_URL ?>pages/contact.php" class="hover:text-purple-400 transition flex items-center gap-1.5"><i class="fa-solid fa-chevron-right text-[10px] text-purple-500"></i> Contact</a></li>
                 </ul>
             </div>
 

@@ -1,0 +1,29 @@
+[
+    {
+        "id": "msg_6a86e6e9ec09e",
+        "name": "John Doe",
+        "email": "johndoe@example.com",
+        "subject": "Full-Stack Role Inquiry",
+        "message": "Hello Sudipan, I saw your MRV and Strapi work and would like to discuss a role.",
+        "timestamp": "2026-08-20 13:37:13",
+        "ip": "127.0.0.1"
+    },
+    {
+        "id": "msg_6a86e7b07ab73",
+        "name": "SR",
+        "email": "sudipanmandalpay@gmail.com",
+        "subject": "Headless CMS &amp; Strapi Architecture",
+        "message": "HIIgtdhggdhhgdhd",
+        "timestamp": "2026-08-20 13:40:32",
+        "ip": "::1"
+    },
+    {
+        "id": "msg_6a86e7f2cdef7",
+        "name": "Soumya",
+        "email": "bharatchandram314@gmail.com",
+        "subject": "Full-Time Engineering Role",
+        "message": "ASDFGHJKWERFGHJKXSXDCFVFGBHNMSDFGHJKSXDFCVBNM&lt;",
+        "timestamp": "2026-08-20 13:41:38",
+        "ip": "::1"
+    }
+]

@@ -37,12 +37,16 @@ require_once __DIR__ . '/../includes/header.php';
                             <span>Status:</span>
                             <span class="text-emerald-500 flex items-center gap-1">
                                 <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-                                Active PHP Developer
+                                Junior Engineer
                             </span>
                         </div>
                         <div class="flex items-center justify-between text-xs font-medium text-slate-500 dark:text-slate-400 mt-1">
                             <span>Organization:</span>
-                            <span class="text-slate-900 dark:text-white font-semibold">Vxplore Technologies</span>
+                            <span class="text-slate-900 dark:text-white font-semibold">EELAB CARBON Pvt Ltd</span>
+                        </div>
+                        <div class="flex items-center justify-between text-xs font-medium text-slate-500 dark:text-slate-400 mt-1">
+                            <span>Previous:</span>
+                            <span>Vxplore Technologies</span>
                         </div>
                         <div class="flex items-center justify-between text-xs font-medium text-slate-500 dark:text-slate-400 mt-1">
                             <span>Location:</span>
@@ -56,14 +60,16 @@ require_once __DIR__ . '/../includes/header.php';
             <div class="lg:col-span-7 flex flex-col gap-6">
                 <div>
                     <h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-3">
-                        Engineering Philosophy & Mindset
+                        Engineering Philosophy & Technical Stack
                     </h2>
                     <p class="text-slate-600 dark:text-slate-300 text-sm sm:text-base leading-relaxed mb-4">
-                        I am a Full Stack PHP Developer with hands-on enterprise experience in backend systems, database performance, and application support. 
-                        My focus is on writing clean, modular, and maintainable code that delivers measurable business value.
+                        I am a Junior Engineer & Full Stack Developer based in Kolkata. Currently at <strong class="text-slate-900 dark:text-white">EELAB CARBON Pvt Ltd</strong>, I engineer backend systems and REST APIs for the proprietary <strong class="text-emerald-600 dark:text-emerald-400">IMITERRA MRV Platform</strong> (Measurement, Reporting, and Verification) using <strong class="text-indigo-600 dark:text-indigo-400">Node.js, Strapi Headless CMS, TypeScript, JavaScript, and PostgreSQL</strong> for Enhanced Rock Weathering (ERW).
+                    </p>
+                    <p class="text-slate-600 dark:text-slate-300 text-sm sm:text-base leading-relaxed mb-4">
+                        With strong enterprise experience from <strong class="text-slate-900 dark:text-white">Vxplore Technologies</strong>, I specialize in <strong class="text-purple-600 dark:text-purple-400">PHP 8, CodeIgniter 4 (CI4), Laravel, and MySQL</strong>, following MVC design patterns, building RESTful APIs, and implementing database query optimization.
                     </p>
                     <p class="text-slate-600 dark:text-slate-300 text-sm sm:text-base leading-relaxed">
-                        With solid foundations in <strong>PHP, CodeIgniter 4, Laravel, and MySQL</strong>, I build structured MVC solutions, integrate modern AI capabilities (OpenAI API), and craft responsive, intuitive interfaces using <strong>JavaScript, React, Tailwind CSS, and Bootstrap</strong>.
+                        I actively integrate AI capabilities like the <strong class="text-indigo-600 dark:text-indigo-400">OpenAI API</strong> into real-world software, and craft clean, responsive user interfaces using <strong>TypeScript, JavaScript (ES6+), React, Tailwind CSS, and Bootstrap</strong>.
                     </p>
                 </div>
 
@@ -71,8 +77,8 @@ require_once __DIR__ . '/../includes/header.php';
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
                     <div class="glass-card p-4 rounded-xl border border-slate-200 dark:border-slate-800">
                         <i class="fa-solid fa-code text-purple-600 dark:text-purple-400 text-xl mb-2"></i>
-                        <h3 class="font-bold text-slate-900 dark:text-white text-sm">Languages</h3>
-                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">PHP 8, JavaScript (ES6+), Python, HTML5, CSS3</p>
+                        <h3 class="font-bold text-slate-900 dark:text-white text-sm">Languages & CMS</h3>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Node.js, Strapi, TypeScript, JavaScript, PostgreSQL, PHP</p>
                     </div>
 
                     <div class="glass-card p-4 rounded-xl border border-slate-200 dark:border-slate-800">

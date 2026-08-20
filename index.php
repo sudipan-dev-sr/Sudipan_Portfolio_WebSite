@@ -44,9 +44,8 @@ require_once __DIR__ . '/includes/header.php';
 
         <!-- Hero Subtitle / Engineering Mindset -->
         <p class="reveal max-w-3xl text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed font-light">
-            Full Stack PHP Developer with hands-on enterprise experience at <span class="font-semibold text-slate-900 dark:text-white">Vxplore Technologies</span>. 
-            Specializing in <span class="text-purple-600 dark:text-purple-400 font-medium">PHP, CodeIgniter 4, Laravel, MySQL, RESTful APIs</span>, and modern frontend technologies. 
-            Passionate about building scalable backend architectures, clean code, and AI-driven web systems.
+            Junior Engineer & Full Stack Developer building the <span class="font-semibold text-slate-900 dark:text-white">IMITERRA MRV Platform</span> at <span class="font-semibold text-slate-900 dark:text-white">EELAB CARBON</span>, with enterprise backend background at <span class="font-semibold text-slate-900 dark:text-white">Vxplore Technologies</span>. 
+            Specializing in <span class="text-purple-600 dark:text-purple-400 font-medium">Node.js, Strapi (Headless CMS), TypeScript, JavaScript, PostgreSQL, PHP 8, and RESTful APIs</span>.
         </p>
 
         <!-- Hero Action Buttons -->
@@ -71,19 +70,25 @@ require_once __DIR__ . '/includes/header.php';
         <!-- Tech Stack Pill Ribbon -->
         <div class="reveal pt-6 flex flex-wrap items-center justify-center gap-2 sm:gap-3 text-xs font-medium text-slate-500 dark:text-slate-400">
             <span class="px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 flex items-center gap-1.5">
+                <i class="fa-brands fa-node-js text-emerald-500 text-sm"></i> Node.js
+            </span>
+            <span class="px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 flex items-center gap-1.5">
+                <i class="fa-solid fa-cube text-indigo-500 text-sm"></i> Strapi (Headless CMS)
+            </span>
+            <span class="px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 flex items-center gap-1.5">
+                <i class="fa-solid fa-code text-blue-500 text-sm"></i> TypeScript
+            </span>
+            <span class="px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 flex items-center gap-1.5">
+                <i class="fa-brands fa-js text-yellow-500 text-sm"></i> JavaScript
+            </span>
+            <span class="px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 flex items-center gap-1.5">
+                <i class="fa-solid fa-database text-sky-500 text-sm"></i> PostgreSQL
+            </span>
+            <span class="px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 flex items-center gap-1.5">
                 <i class="fa-brands fa-php text-purple-500 text-sm"></i> PHP 8+
             </span>
             <span class="px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 flex items-center gap-1.5">
-                <i class="fa-solid fa-fire text-amber-500 text-sm"></i> CodeIgniter 4
-            </span>
-            <span class="px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 flex items-center gap-1.5">
-                <i class="fa-brands fa-laravel text-red-500 text-sm"></i> Laravel
-            </span>
-            <span class="px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 flex items-center gap-1.5">
-                <i class="fa-solid fa-database text-blue-500 text-sm"></i> MySQL
-            </span>
-            <span class="px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 flex items-center gap-1.5">
-                <i class="fa-brands fa-js text-yellow-500 text-sm"></i> JavaScript & React
+                <i class="fa-solid fa-fire text-amber-500 text-sm"></i> CodeIgniter 4 / Laravel
             </span>
             <span class="px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 flex items-center gap-1.5">
                 <i class="fa-solid fa-robot text-emerald-500 text-sm"></i> OpenAI API
@@ -176,15 +181,17 @@ require_once __DIR__ . '/includes/header.php';
             <div class="reveal lg:col-span-7 flex flex-col gap-6">
                 <div>
                     <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-3">
-                        Full-Stack PHP Developer & Problem Solver
+                        Junior Engineer & Full-Stack Developer
                     </h3>
                     <p class="text-slate-600 dark:text-slate-300 text-sm sm:text-base leading-relaxed mb-4">
-                        I am a dedicated developer based in Kolkata with proven experience in backend engineering, REST API architecture, and dynamic web applications. 
-                        At <strong class="text-slate-900 dark:text-white">Vxplore Technologies</strong>, I develop and maintain backend features using 
-                        <strong class="text-purple-600 dark:text-purple-400">PHP and CodeIgniter 4</strong>, following MVC architecture and optimizing database queries for high reliability.
+                        I am a dedicated software engineer based in Kolkata specializing in scalable backend architectures, headless CMS engineering, and climate-tech data systems. 
+                        At <strong class="text-slate-900 dark:text-white">EELAB CARBON Pvt Ltd</strong>, I engineer backend systems and REST APIs for the proprietary <strong class="text-emerald-600 dark:text-emerald-400">IMITERRA MRV Platform</strong> (Measurement, Reporting, and Verification) using <strong class="text-indigo-600 dark:text-indigo-400">Node.js, Strapi Headless CMS, TypeScript, JavaScript, and PostgreSQL</strong> for Enhanced Rock Weathering (ERW) and carbon credit accounting.
+                    </p>
+                    <p class="text-slate-600 dark:text-slate-300 text-sm sm:text-base leading-relaxed mb-4">
+                        Previously at <strong class="text-slate-900 dark:text-white">Vxplore Technologies</strong>, I built and maintained enterprise web applications using <strong class="text-purple-600 dark:text-purple-400">PHP 8 and CodeIgniter 4</strong>, adhering strictly to MVC architecture and optimizing database throughput.
                     </p>
                     <p class="text-slate-600 dark:text-slate-300 text-sm sm:text-base leading-relaxed">
-                        I actively integrate AI capabilities like the <strong class="text-indigo-600 dark:text-indigo-400">OpenAI API</strong> into modern web applications (such as intelligent CV analyzers and medical prescription scanners), bridging the gap between traditional enterprise backends and modern intelligence.
+                        I also actively integrate AI capabilities like the <strong class="text-indigo-600 dark:text-indigo-400">OpenAI API</strong> into modern web applications (such as intelligent CV analyzers and medical prescription scanners), bridging traditional backends with modern intelligence.
                     </p>
                 </div>
 
@@ -193,19 +200,19 @@ require_once __DIR__ . '/includes/header.php';
                     <div class="glass-card p-4 rounded-xl border border-slate-200 dark:border-slate-800 hover:border-purple-500/40 transition">
                         <i class="fa-solid fa-code text-purple-600 dark:text-purple-400 text-xl mb-2"></i>
                         <h4 class="font-bold text-slate-900 dark:text-white text-sm">Languages</h4>
-                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">PHP, JavaScript (ES6+), Python, HTML5, CSS3</p>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">TypeScript, JavaScript (ES6+), PHP 8, Python, HTML5/CSS3</p>
                     </div>
 
                     <div class="glass-card p-4 rounded-xl border border-slate-200 dark:border-slate-800 hover:border-indigo-500/40 transition">
                         <i class="fa-solid fa-layer-group text-indigo-600 dark:text-indigo-400 text-xl mb-2"></i>
-                        <h4 class="font-bold text-slate-900 dark:text-white text-sm">Frameworks</h4>
-                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">CodeIgniter 4, Laravel, React.js, Tailwind, Bootstrap</p>
+                        <h4 class="font-bold text-slate-900 dark:text-white text-sm">Frameworks & CMS</h4>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Node.js, Strapi (Headless CMS), CodeIgniter 4, Laravel, React.js</p>
                     </div>
 
                     <div class="glass-card p-4 rounded-xl border border-slate-200 dark:border-slate-800 hover:border-amber-500/40 transition">
                         <i class="fa-solid fa-database text-amber-500 text-xl mb-2"></i>
                         <h4 class="font-bold text-slate-900 dark:text-white text-sm">Databases</h4>
-                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">MySQL (Query Optimization), Firebase, MongoDB</p>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">PostgreSQL, MySQL (Optimization), Firebase, MongoDB</p>
                     </div>
                 </div>
 
@@ -258,7 +265,85 @@ require_once __DIR__ . '/includes/header.php';
         <!-- Experience Timeline -->
         <div class="relative border-l-2 border-purple-500/30 dark:border-purple-500/20 ml-4 sm:ml-8 space-y-12">
             
-            <!-- Timeline Item: Vxplore Technologies -->
+            <!-- Timeline Item 1: EELAB CARBON Pvt Ltd -->
+            <div class="reveal relative pl-8 sm:pl-10 group">
+                <!-- Timeline Dot -->
+                <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-emerald-500 border-4 border-white dark:border-[#0B0F17] shadow-md group-hover:scale-125 transition-transform"></div>
+
+                <div class="glass-card p-6 sm:p-8 rounded-2xl border border-slate-200/80 dark:border-slate-800 glass-card-hover">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
+                        <div>
+                            <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300 mb-2">
+                                Feb 2026 – Present
+                            </span>
+                            <h3 class="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white">
+                                Junior Engineer
+                            </h3>
+                            <p class="text-sm font-medium text-slate-600 dark:text-slate-400 flex items-center gap-1.5 mt-0.5">
+                                <i class="fa-solid fa-building text-emerald-500"></i>
+                                <a href="https://eelabcarbon.com/" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600 dark:hover:text-emerald-400 hover:underline inline-flex items-center gap-1">
+                                    EELAB CARBON Pvt Ltd
+                                    <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                                </a>
+                                • Kolkata, India
+                            </p>
+                        </div>
+                        <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-medium bg-emerald-100 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-400 self-start sm:self-auto">
+                            <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                            Full-time / Active Role
+                        </span>
+                    </div>
+
+                    <!-- Project Highlight Badge -->
+                    <div class="mb-4 inline-flex items-center gap-2 px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs font-semibold text-slate-800 dark:text-slate-200">
+                        <i class="fa-solid fa-seedling text-emerald-500"></i>
+                        <span>Project: IMITERRA MRV Platform (Measurement, Reporting & Verification)</span>
+                    </div>
+
+                    <!-- Role Achievements -->
+                    <ul class="space-y-2.5 text-sm text-slate-600 dark:text-slate-300 mb-6">
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-check text-emerald-600 dark:text-emerald-400 mt-1 flex-shrink-0 text-xs"></i>
+                            <span>Developing and maintaining backend services for the <strong>IMITERRA MRV Platform</strong> supporting nature-based carbon removal and Enhanced Rock Weathering (ERW).</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-check text-emerald-600 dark:text-emerald-400 mt-1 flex-shrink-0 text-xs"></i>
+                            <span>Architecting custom content schemas, controllers, and services using <strong>Node.js, Strapi Headless CMS, TypeScript, and JavaScript</strong> for type-safe and high-performance API delivery.</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-check text-emerald-600 dark:text-emerald-400 mt-1 flex-shrink-0 text-xs"></i>
+                            <span>Designing and optimizing <strong>PostgreSQL relational schemas</strong> and spatial/geo-tagged data tracking for field soil sampling and carbon credit accounting.</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-check text-emerald-600 dark:text-emerald-400 mt-1 flex-shrink-0 text-xs"></i>
+                            <span>Engineering secure <strong>RESTful APIs and JSON data pipelines</strong> for field data ingestion, GPS plot mapping, and transparent verification audit trails.</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-check text-emerald-600 dark:text-emerald-400 mt-1 flex-shrink-0 text-xs"></i>
+                            <span>Implementing digital reporting pipelines connecting mobile data collection tools with the central IMITERRA MRV analytical dashboard for real-time monitoring.</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-check text-emerald-600 dark:text-emerald-400 mt-1 flex-shrink-0 text-xs"></i>
+                            <span>Collaborating within cross-functional technical and scientific teams using <strong>Git workflows</strong> to ensure continuous integration, code quality, and timely feature deployment.</span>
+                        </li>
+                    </ul>
+
+                    <!-- Experience Tech Tags -->
+                    <div class="flex flex-wrap gap-2 pt-4 border-t border-slate-200 dark:border-slate-800">
+                        <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800/40">Node.js</span>
+                        <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800/40">Strapi (Headless CMS)</span>
+                        <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800/40">TypeScript</span>
+                        <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">JavaScript (ES6+)</span>
+                        <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">PostgreSQL</span>
+                        <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">RESTful APIs</span>
+                        <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">IMITERRA MRV Platform</span>
+                        <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">ERW Carbon Accounting</span>
+                        <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">Git</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Timeline Item 2: Vxplore Technologies -->
             <div class="reveal relative pl-8 sm:pl-10 group">
                 <!-- Timeline Dot -->
                 <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-purple-600 border-4 border-white dark:border-[#0B0F17] shadow-md group-hover:scale-125 transition-transform"></div>
@@ -267,7 +352,7 @@ require_once __DIR__ . '/includes/header.php';
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
                         <div>
                             <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-purple-100 dark:bg-purple-900/40 text-purple-700 dark:text-purple-300 mb-2">
-                                2025 – Present
+                                2025 – Feb 2026
                             </span>
                             <h3 class="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white">
                                 PHP Developer
@@ -277,9 +362,9 @@ require_once __DIR__ . '/includes/header.php';
                                 Vxplore Technologies (P) Ltd. • Kolkata, India
                             </p>
                         </div>
-                        <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-medium bg-emerald-100 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-400 self-start sm:self-auto">
-                            <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
-                            Full-time / Active Role
+                        <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-medium bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 self-start sm:self-auto">
+                            <i class="fa-solid fa-check text-purple-500 text-[10px]"></i>
+                            Full-time • Completed
                         </span>
                     </div>
 
@@ -499,6 +584,46 @@ require_once __DIR__ . '/includes/header.php';
                 <p class="text-xs text-slate-500 dark:text-slate-400">MVC Architecture, Controllers, Models, Filters, RESTful routes, Live support.</p>
             </div>
 
+            <!-- Skill: Strapi Headless CMS -->
+            <div class="skill-card glass-card p-6 rounded-2xl border border-slate-200 dark:border-slate-800 glass-card-hover" data-category="backend">
+                <div class="flex items-center justify-between mb-3">
+                    <div class="flex items-center gap-3">
+                        <span class="w-10 h-10 rounded-xl bg-indigo-100 dark:bg-indigo-900/50 text-indigo-600 dark:text-indigo-400 flex items-center justify-center text-xl font-bold">
+                            <i class="fa-solid fa-cube"></i>
+                        </span>
+                        <div>
+                            <h4 class="font-bold text-slate-900 dark:text-white">Strapi (Headless CMS)</h4>
+                            <span class="text-[11px] text-slate-500 dark:text-slate-400">Content & API Framework</span>
+                        </div>
+                    </div>
+                    <span class="text-xs font-bold text-indigo-500">86%</span>
+                </div>
+                <div class="w-full h-2 rounded-full bg-slate-200 dark:bg-slate-800 overflow-hidden mb-3">
+                    <div class="h-full bg-gradient-to-r from-indigo-500 to-purple-600 rounded-full" style="width: 86%"></div>
+                </div>
+                <p class="text-xs text-slate-500 dark:text-slate-400">Custom content types, schema controllers, RBAC, plugins, REST & GraphQL endpoints.</p>
+            </div>
+
+            <!-- Skill: TypeScript -->
+            <div class="skill-card glass-card p-6 rounded-2xl border border-slate-200 dark:border-slate-800 glass-card-hover" data-category="frontend">
+                <div class="flex items-center justify-between mb-3">
+                    <div class="flex items-center gap-3">
+                        <span class="w-10 h-10 rounded-xl bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-400 flex items-center justify-center text-xl font-bold">
+                            <i class="fa-solid fa-code"></i>
+                        </span>
+                        <div>
+                            <h4 class="font-bold text-slate-900 dark:text-white">TypeScript</h4>
+                            <span class="text-[11px] text-slate-500 dark:text-slate-400">Type-Safe Architecture</span>
+                        </div>
+                    </div>
+                    <span class="text-xs font-bold text-blue-500">85%</span>
+                </div>
+                <div class="w-full h-2 rounded-full bg-slate-200 dark:bg-slate-800 overflow-hidden mb-3">
+                    <div class="h-full bg-gradient-to-r from-blue-600 to-cyan-500 rounded-full" style="width: 85%"></div>
+                </div>
+                <p class="text-xs text-slate-500 dark:text-slate-400">Interfaces, generics, type-safe API layers, structured data models for MRV metrics.</p>
+            </div>
+
             <!-- Skill: Laravel -->
             <div class="skill-card glass-card p-6 rounded-2xl border border-slate-200 dark:border-slate-800 glass-card-hover" data-category="backend">
                 <div class="flex items-center justify-between mb-3">
@@ -519,6 +644,26 @@ require_once __DIR__ . '/includes/header.php';
                 <p class="text-xs text-slate-500 dark:text-slate-400">Eloquent ORM, Blade Engine, Routing, Migrations, Middleware, CRUD.</p>
             </div>
 
+            <!-- Skill: Node.js Runtime -->
+            <div class="skill-card glass-card p-6 rounded-2xl border border-slate-200 dark:border-slate-800 glass-card-hover" data-category="backend">
+                <div class="flex items-center justify-between mb-3">
+                    <div class="flex items-center gap-3">
+                        <span class="w-10 h-10 rounded-xl bg-emerald-100 dark:bg-emerald-900/50 text-emerald-600 dark:text-emerald-400 flex items-center justify-center text-xl font-bold">
+                            <i class="fa-brands fa-node-js"></i>
+                        </span>
+                        <div>
+                            <h4 class="font-bold text-slate-900 dark:text-white">Node.js Framework</h4>
+                            <span class="text-[11px] text-slate-500 dark:text-slate-400">Backend Runtime</span>
+                        </div>
+                    </div>
+                    <span class="text-xs font-bold text-emerald-500">88%</span>
+                </div>
+                <div class="w-full h-2 rounded-full bg-slate-200 dark:bg-slate-800 overflow-hidden mb-3">
+                    <div class="h-full bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full" style="width: 88%"></div>
+                </div>
+                <p class="text-xs text-slate-500 dark:text-slate-400">Asynchronous I/O, npm modules, REST APIs, Strapi engine backend integration.</p>
+            </div>
+
             <!-- Skill: MySQL -->
             <div class="skill-card glass-card p-6 rounded-2xl border border-slate-200 dark:border-slate-800 glass-card-hover" data-category="database">
                 <div class="flex items-center justify-between mb-3">
@@ -537,6 +682,26 @@ require_once __DIR__ . '/includes/header.php';
                     <div class="h-full bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full" style="width: 88%"></div>
                 </div>
                 <p class="text-xs text-slate-500 dark:text-slate-400">Schema design, Indexing, Query Optimization, Foreign keys, Stored Data.</p>
+            </div>
+
+            <!-- Skill: PostgreSQL -->
+            <div class="skill-card glass-card p-6 rounded-2xl border border-slate-200 dark:border-slate-800 glass-card-hover" data-category="database">
+                <div class="flex items-center justify-between mb-3">
+                    <div class="flex items-center gap-3">
+                        <span class="w-10 h-10 rounded-xl bg-sky-100 dark:bg-sky-900/50 text-sky-600 dark:text-sky-400 flex items-center justify-center text-xl font-bold">
+                            <i class="fa-solid fa-database"></i>
+                        </span>
+                        <div>
+                            <h4 class="font-bold text-slate-900 dark:text-white">PostgreSQL</h4>
+                            <span class="text-[11px] text-slate-500 dark:text-slate-400">Relational & Spatial DB</span>
+                        </div>
+                    </div>
+                    <span class="text-xs font-bold text-sky-500">86%</span>
+                </div>
+                <div class="w-full h-2 rounded-full bg-slate-200 dark:bg-slate-800 overflow-hidden mb-3">
+                    <div class="h-full bg-gradient-to-r from-sky-500 to-blue-600 rounded-full" style="width: 86%"></div>
+                </div>
+                <p class="text-xs text-slate-500 dark:text-slate-400">Relational schemas, queries, data integrity, spatial coordinates tracking for MRV.</p>
             </div>
 
             <!-- Skill: OpenAI & AI Integration -->
@@ -1048,12 +1213,30 @@ require_once __DIR__ . '/includes/header.php';
             <!-- Right Column: Dynamic AJAX Contact Form -->
             <div class="reveal lg:col-span-7">
                 <div class="glass-card p-6 sm:p-8 rounded-2xl border border-slate-200/80 dark:border-slate-800">
-                    <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">
-                        Send a Direct Message
-                    </h3>
+                    <div class="flex items-center justify-between mb-2">
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white">
+                            Send a Direct Message
+                        </h3>
+                        <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-emerald-100 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 border border-emerald-500/20">
+                            <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                            Live & Active
+                        </span>
+                    </div>
                     <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 mb-6">
-                        Fill out the details below and I will get back to you promptly.
+                        Select a quick topic or write custom requirements. I will respond within 24 hours.
                     </p>
+
+                    <!-- Quick Topic Chips -->
+                    <div class="mb-5">
+                        <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400 block mb-2">Quick Subject Select</span>
+                        <div class="flex flex-wrap gap-1.5 text-xs">
+                            <button type="button" onclick="setQuickSubject('Full-Time Engineering Role', this)" class="quick-sub-btn px-3 py-1.5 rounded-xl border border-slate-200 dark:border-slate-700 glass-card text-slate-600 dark:text-slate-300 hover:border-purple-500 hover:text-purple-600 transition">⚡ Full-Time Role</button>
+                            <button type="button" onclick="setQuickSubject('IMITERRA / Climate-Tech MRV Platform', this)" class="quick-sub-btn px-3 py-1.5 rounded-xl border border-slate-200 dark:border-slate-700 glass-card text-slate-600 dark:text-slate-300 hover:border-emerald-500 hover:text-emerald-600 transition">🌿 Climate MRV</button>
+                            <button type="button" onclick="setQuickSubject('Strapi & Node.js Architecture', this)" class="quick-sub-btn px-3 py-1.5 rounded-xl border border-slate-200 dark:border-slate-700 glass-card text-slate-600 dark:text-slate-300 hover:border-indigo-500 hover:text-indigo-600 transition">🚀 Strapi & Node</button>
+                            <button type="button" onclick="setQuickSubject('PostgreSQL / MySQL Query Optimization', this)" class="quick-sub-btn px-3 py-1.5 rounded-xl border border-slate-200 dark:border-slate-700 glass-card text-slate-600 dark:text-slate-300 hover:border-sky-500 hover:text-sky-600 transition">📊 Database Tuning</button>
+                            <button type="button" onclick="setQuickSubject('General Project Collaboration', this)" class="quick-sub-btn px-3 py-1.5 rounded-xl border border-slate-200 dark:border-slate-700 glass-card text-slate-600 dark:text-slate-300 hover:border-amber-500 hover:text-amber-600 transition">💡 General</button>
+                        </div>
+                    </div>
 
                     <!-- Alert message container -->
                     <div id="contactFormAlert" class="hidden mb-6 p-4 rounded-xl text-xs sm:text-sm font-medium transition-all"></div>
@@ -1087,37 +1270,42 @@ require_once __DIR__ . '/includes/header.php';
 
                         <div>
                             <label for="subject" class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5">
-                                Subject / Project Inquiry
+                                Subject / Project Inquiry <span class="text-red-500">*</span>
                             </label>
                             <input type="text" 
                                    id="subject" 
                                    name="subject" 
+                                   required
                                    placeholder="e.g. Full-Time Opportunity / Project Discussion" 
                                    class="w-full px-4 py-3 rounded-xl bg-white dark:bg-slate-800/90 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-purple-500/50 focus:border-purple-500 transition" />
                         </div>
 
                         <div>
-                            <label for="message" class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5">
-                                Message <span class="text-red-500">*</span>
-                            </label>
+                            <div class="flex items-center justify-between mb-1.5">
+                                <label for="message" class="block text-xs font-semibold text-slate-700 dark:text-slate-300">
+                                    Message <span class="text-red-500">*</span>
+                                </label>
+                                <span id="homeCharCount" class="text-[11px] text-slate-400">0 / 2000</span>
+                            </div>
                             <textarea id="message" 
                                       name="message" 
                                       rows="5" 
                                       required
+                                      oninput="document.getElementById('homeCharCount').textContent = this.value.length + ' / 2000'"
                                       placeholder="Write your message here... Feel free to describe your requirements or inquiry." 
                                       class="w-full px-4 py-3 rounded-xl bg-white dark:bg-slate-800/90 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-purple-500/50 focus:border-purple-500 transition"></textarea>
                         </div>
 
                         <button type="submit" 
                                 id="contactSubmitBtn" 
-                                class="w-full btn-primary py-3.5 mt-2 text-sm font-semibold tracking-wide">
-                            <span id="submitBtnText" class="flex items-center gap-2">
-                                <span>Send Message</span>
+                                class="w-full btn-primary py-3.5 mt-2 text-sm font-semibold tracking-wide shadow-lg shadow-purple-500/25">
+                            <span id="submitBtnText" class="flex items-center justify-center gap-2">
+                                <span>Send Direct Message</span>
                                 <i class="fa-solid fa-paper-plane text-xs"></i>
                             </span>
-                            <span id="submitBtnSpinner" class="hidden flex items-center gap-2">
+                            <span id="submitBtnSpinner" class="hidden flex items-center justify-center gap-2">
                                 <i class="fa-solid fa-circle-notch fa-spin text-sm"></i>
-                                <span>Sending Message...</span>
+                                <span>Transmitting Message...</span>
                             </span>
                         </button>
                     </form>

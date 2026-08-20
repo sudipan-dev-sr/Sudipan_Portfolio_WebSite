@@ -84,11 +84,13 @@ window.addEventListener("scroll", handleScroll);
 
 // ================= TYPEWRITER ANIMATION =================
 const typewriterPhrases = [
-    "Full Stack PHP Developer",
-    "CodeIgniter 4 & Laravel Specialist",
-    "AI & OpenAI Integration Engineer",
-    "Scalable Backend Architect",
-    "MySQL & Database Optimizer"
+    "Junior Engineer @ EELAB CARBON",
+    "IMITERRA MRV Platform Engineer",
+    "Node.js, Strapi & TypeScript Developer",
+    "Full Stack Web Developer",
+    "PostgreSQL & MySQL Specialist",
+    "CodeIgniter 4 & Laravel Engineer",
+    "AI & OpenAI Integration Engineer"
 ];
 
 let phraseIndex = 0;
@@ -436,6 +438,21 @@ function initScrollReveal() {
     reveals.forEach(el => revealObserver.observe(el));
 }
 
+// ================= QUICK SUBJECT HELPER =================
+function setQuickSubject(subjectText, btn) {
+    const subjectInput = document.getElementById('subject') || document.getElementById('senderSubject');
+    if (subjectInput) {
+        subjectInput.value = subjectText;
+        subjectInput.focus();
+    }
+    document.querySelectorAll('.quick-sub-btn').forEach(b => {
+        b.classList.remove('border-purple-500', 'bg-purple-50', 'dark:bg-purple-950/40', 'text-purple-700', 'dark:text-purple-300', 'font-semibold');
+    });
+    if (btn) {
+        btn.classList.add('border-purple-500', 'bg-purple-50', 'dark:bg-purple-950/40', 'text-purple-700', 'dark:text-purple-300', 'font-semibold');
+    }
+}
+
 // ================= DYNAMIC AJAX CONTACT FORM =================
 async function handleContactSubmit(event) {
     event.preventDefault();
@@ -462,7 +479,8 @@ async function handleContactSubmit(event) {
     const formData = new FormData(form);
 
     try {
-        const response = await fetch("pages/contact_process.php", {
+        const endpoint = (typeof window !== 'undefined' && window.BASE_URL) ? `${window.BASE_URL}pages/contact_process.php` : "pages/contact_process.php";
+        const response = await fetch(endpoint, {
             method: "POST",
             body: formData
         });
