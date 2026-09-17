@@ -18,7 +18,7 @@
                 </a>
                 
                 <p class="text-xs sm:text-sm text-slate-400 max-w-md leading-relaxed">
-                    Junior Engineer & Full Stack Developer building the IMITERRA MRV Platform at EELAB CARBON. Specializing in Node.js, Strapi (Headless CMS), TypeScript, JavaScript, PostgreSQL, PHP 8, CodeIgniter 4, Laravel, and RESTful APIs.
+                    Junior Engineer & Full Stack Developer building the MRV Platform at EELAB CARBON. Specializing in Node.js, Strapi (Headless CMS), TypeScript, JavaScript, PostgreSQL, PHP 8, CodeIgniter 4, Laravel, and RESTful APIs.
                 </p>
 
                 <!-- Live Status Badge -->

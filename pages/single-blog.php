@@ -1,6 +1,6 @@
 <?php
-$slug = isset($_GET['slug']) ? htmlspecialchars($_GET['slug']) : 'architecting-imiterra-mrv-platform';
-$pageTitle = "Architecting IMITERRA: Scalable MRV Platform | Sudipan Mandal";
+$slug = isset($_GET['slug']) ? htmlspecialchars($_GET['slug']) : 'architecting-mrv-platform';
+$pageTitle = "Architecting the MRV Platform | Sudipan Mandal";
 require_once __DIR__ . '/../includes/header.php';
 ?>
 
@@ -30,7 +30,7 @@ require_once __DIR__ . '/../includes/header.php';
         </div>
 
         <h1 class="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 dark:text-white tracking-tight leading-tight mb-6">
-            Architecting IMITERRA: Building a Scalable MRV Platform for Carbon Removal with Node.js & Strapi
+            Architecting the MRV Platform: Building a Scalable System for Carbon Removal with Node.js & Strapi
         </h1>
 
         <!-- Author Banner -->
@@ -66,7 +66,7 @@ require_once __DIR__ . '/../includes/header.php';
                         Nature-based carbon removal via <strong>Enhanced Rock Weathering (ERW)</strong> represents one of the most promising climate technologies. By spreading crushed silicate rocks (such as basalt) over agricultural croplands, the natural chemical weathering process captures atmospheric carbon dioxide (\(\text{CO}_2\)) and permanently locks it into stable dissolved bicarbonate ions in groundwater.
                     </p>
                     <p class="mt-3">
-                        However, the fundamental barrier to scaling nature-based carbon markets is <strong>verifiability</strong>. Carbon credit buyers and standards registries require indisputable, audit-ready data tracking every gram of rock deployed, every soil sample analyzed, and every geo-polygon monitored. This is where the <strong>IMITERRA MRV Platform</strong> comes in.
+                        However, the fundamental barrier to scaling nature-based carbon markets is <strong>verifiability</strong>. Carbon credit buyers and standards registries require indisputable, audit-ready data tracking every gram of rock deployed, every soil sample analyzed, and every geo-polygon monitored. This is where the <strong>MRV Platform</strong> comes in.
                     </p>
                 </div>
 
@@ -84,7 +84,7 @@ require_once __DIR__ . '/../includes/header.php';
                         Technology Stack Selection & Rationale
                     </h2>
                     <p>
-                        When architecting the IMITERRA backend at EELAB CARBON, we selected a modern decoupled stack designed for rapid schema evolution, high query performance, and rock-solid type safety:
+                        When architecting the MRV Platform backend at EELAB CARBON, we selected a modern decoupled stack designed for rapid schema evolution, high query performance, and rock-solid type safety:
                     </p>
                     <ul class="list-disc pl-5 mt-3 space-y-2 text-xs sm:text-sm">
                         <li><strong>Strapi Headless CMS (Node.js):</strong> Provides rapid content modeling, role-based permission tiers (administrators, field agronomists, scientific auditors), and extensible RESTful controllers.</li>
@@ -144,7 +144,7 @@ require_once __DIR__ . '/../includes/header.php';
                         Conclusion: The Future of Software in Climate Action
                     </h2>
                     <p>
-                        Building the backend for IMITERRA at EELAB CARBON demonstrates how modern software engineering disciplines—robust APIs, strict typing, and high-performance databases—directly empower real-world climate science and scalable carbon removal.
+                        Building the backend for the MRV Platform at EELAB CARBON demonstrates how modern software engineering disciplines—robust APIs, strict typing, and high-performance databases—directly empower real-world climate science and scalable carbon removal.
                     </p>
                 </div>
 
