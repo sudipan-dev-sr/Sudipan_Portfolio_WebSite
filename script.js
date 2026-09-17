@@ -491,6 +491,9 @@ async function handleContactSubmit(event) {
             alertBox.className = "mb-6 p-4 rounded-xl text-xs sm:text-sm font-medium bg-emerald-100 dark:bg-emerald-950/80 text-emerald-800 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-800 block";
             alertBox.innerHTML = `<i class="fa-solid fa-circle-check mr-2"></i> ${result.message}`;
             form.reset();
+        } else if (result.is_logged) {
+            alertBox.className = "mb-6 p-4 rounded-xl text-xs sm:text-sm font-medium bg-amber-100 dark:bg-amber-950/80 text-amber-800 dark:text-amber-300 border border-amber-300 dark:border-amber-800 block";
+            alertBox.innerHTML = `<i class="fa-solid fa-circle-info mr-2"></i> ${result.message}`;
         } else {
             alertBox.className = "mb-6 p-4 rounded-xl text-xs sm:text-sm font-medium bg-red-100 dark:bg-red-950/80 text-red-800 dark:text-red-300 border border-red-300 dark:border-red-800 block";
             alertBox.innerHTML = `<i class="fa-solid fa-circle-exclamation mr-2"></i> ${result.message || 'An error occurred. Please try again.'}`;

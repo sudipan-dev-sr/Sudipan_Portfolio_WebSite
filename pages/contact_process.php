@@ -13,11 +13,25 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     exit;
 }
 
+// Load Mail Configuration & Database Helper
+require_once __DIR__ . '/../includes/mail_config.php';
+require_once __DIR__ . '/../includes/db.php';
+
 // Retrieve POST fields
-$name = trim($_POST['name'] ?? '');
-$email = trim($_POST['email'] ?? '');
+$name    = trim($_POST['name'] ?? '');
+$email   = trim($_POST['email'] ?? '');
 $subject = trim($_POST['subject'] ?? 'General Engineering Inquiry');
 $message = trim($_POST['message'] ?? '');
+$hp      = trim($_POST['website_hp'] ?? ''); // Honeypot field for spam prevention
+
+// If honeypot is filled, silent reject
+if (!empty($hp)) {
+    echo json_encode([
+        'success' => true,
+        'message' => 'Your message has been processed.'
+    ]);
+    exit;
+}
 
 // Validation
 $errors = [];
@@ -47,41 +61,35 @@ if (!empty($errors)) {
     exit;
 }
 
-// Recipient details
-$to = "sudipanmandal@gmail.com";
-$email_subject = "Portfolio Contact: " . htmlspecialchars($subject);
+$ipAddress = $_SERVER['REMOTE_ADDR'] ?? 'Unknown';
+$timestamp = date('Y-m-d H:i:s');
 
-$body = "New Message from Portfolio Website\n\n";
-$body .= "Name: " . htmlspecialchars($name) . "\n";
-$body .= "Email: " . htmlspecialchars($email) . "\n";
-$body .= "Subject: " . htmlspecialchars($subject) . "\n";
-$body .= "Message:\n" . htmlspecialchars($message) . "\n\n";
-$body .= "Timestamp: " . date('Y-m-d H:i:s') . "\n";
-$body .= "IP Address: " . ($_SERVER['REMOTE_ADDR'] ?? 'Unknown') . "\n";
+// 1. Store submission in MySQL Database
+logContactSubmissionDb([
+    'name'      => $name,
+    'email'     => $email,
+    'subject'   => $subject,
+    'message'   => $message,
+    'ip'        => $ipAddress,
+    'timestamp' => $timestamp
+]);
 
-$headers = "From: webmaster@sudipanmandal.dev\r\n";
-$headers .= "Reply-To: " . $email . "\r\n";
-$headers .= "X-Mailer: PHP/" . phpversion();
-
-// Attempt to send email
-@mail($to, $email_subject, $body, $headers);
-
-// Store submission in local logs
+// 2. Also keep local file logs (contact_submissions.log and contact_messages.json)
 $logDir = __DIR__ . '/../logs';
 if (!is_dir($logDir)) {
     @mkdir($logDir, 0777, true);
 }
 
-// 1. Text Log
+// Text Log
 @file_put_contents($logDir . '/contact_submissions.log', date('[Y-m-d H:i:s] ') . json_encode([
-    'name' => $name,
-    'email' => $email,
-    'subject' => $subject,
-    'message' => $message,
-    'ip' => $_SERVER['REMOTE_ADDR'] ?? 'Unknown'
+    'name'      => $name,
+    'email'     => $email,
+    'subject'   => $subject,
+    'message'   => $message,
+    'ip'        => $ipAddress
 ]) . PHP_EOL, FILE_APPEND);
 
-// 2. Structured JSON Log
+// Structured JSON Storage
 $jsonFile = $logDir . '/contact_messages.json';
 $allMessages = [];
 if (file_exists($jsonFile)) {
@@ -90,19 +98,63 @@ if (file_exists($jsonFile)) {
         $allMessages = json_decode($raw, true) ?: [];
     }
 }
+$msgId = uniqid('msg_');
 $allMessages[] = [
-    'id' => uniqid('msg_'),
-    'name' => htmlspecialchars($name),
-    'email' => htmlspecialchars($email),
-    'subject' => htmlspecialchars($subject),
-    'message' => htmlspecialchars($message),
-    'timestamp' => date('Y-m-d H:i:s'),
-    'ip' => $_SERVER['REMOTE_ADDR'] ?? 'Unknown'
+    'id'        => $msgId,
+    'name'      => htmlspecialchars($name),
+    'email'     => htmlspecialchars($email),
+    'subject'   => htmlspecialchars($subject),
+    'message'   => htmlspecialchars($message),
+    'timestamp' => $timestamp,
+    'ip'        => $ipAddress
 ];
 @file_put_contents($jsonFile, json_encode($allMessages, JSON_PRETTY_PRINT));
 
-echo json_encode([
-    'success' => true,
-    'message' => 'Thank you, ' . htmlspecialchars($name) . '! Your message has been transmitted successfully. I will get back to you within 24 hours.'
-]);
-exit;
+// 3. Dispatch real email via PHPMailer
+$mailError = '';
+$emailSent = sendPortfolioEmail([
+    'name'    => $name,
+    'email'   => $email,
+    'subject' => $subject,
+    'message' => $message,
+    'ip'      => $ipAddress
+], $mailError);
+
+if ($emailSent) {
+    // 1. Log notification success in database
+    logMailEventDb('success', MAIL_TO_ADDRESS, "Contact Inquiry from {$name}", null, $ipAddress);
+
+    // 2. Dispatch automated Thank You & Confirmation email to the visitor
+    $ackError = '';
+    $ackSent = sendInquiryAcknowledgmentEmail([
+        'name'    => $name,
+        'email'   => $email,
+        'subject' => $subject,
+        'message' => $message
+    ], $ackError);
+
+    if ($ackSent) {
+        logMailEventDb('success', $email, "Auto-Reply Thank You to {$name}", null, $ipAddress);
+    } else {
+        logMailEventDb('error', $email, "Auto-Reply to {$name}", $ackError, $ipAddress);
+    }
+
+    echo json_encode([
+        'success' => true,
+        'message' => 'Thank you, ' . htmlspecialchars($name) . '! Your message has been sent successfully. A confirmation email has been sent to ' . htmlspecialchars($email) . ' and I will get back to you within 24 hours.'
+    ]);
+    exit;
+} else {
+    // Log mail dispatch error to file and MySQL
+    @file_put_contents($logDir . '/mail_error.log', date('[Y-m-d H:i:s] ') . "Failed to send email to " . MAIL_TO_ADDRESS . ": " . $mailError . PHP_EOL, FILE_APPEND);
+    logMailEventDb('error', MAIL_TO_ADDRESS, "Contact Inquiry from {$name}", $mailError, $ipAddress);
+
+    http_response_code(200);
+    echo json_encode([
+        'success'    => false,
+        'is_logged'  => true,
+        'error'      => $mailError,
+        'message'    => 'Thank you, ' . htmlspecialchars($name) . '. Your message was received and saved in our system, but direct email delivery encountered an issue (' . htmlspecialchars($mailError) . '). Please feel free to also reach me directly at ' . MAIL_TO_ADDRESS . '.'
+    ]);
+    exit;
+}

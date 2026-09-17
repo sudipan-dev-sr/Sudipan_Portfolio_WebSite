@@ -52,5 +52,50 @@
         "message": "Headless CMS &amp; Strapi Architecture",
         "timestamp": "2026-09-17 11:46:31",
         "ip": "::1"
+    },
+    {
+        "id": "msg_6aabc22e07228",
+        "name": "SSSSS",
+        "email": "sudipanmandalpay@gmail.com",
+        "subject": "Testing Contact Form",
+        "message": "This is a real message test.",
+        "timestamp": "2026-09-17 12:34:22",
+        "ip": "Unknown"
+    },
+    {
+        "id": "msg_6aabc5fc96f30",
+        "name": "Soumya Mandal",
+        "email": "sudipanmandalpay@gmail.com",
+        "subject": "AI &amp; OpenAI Integration Project",
+        "message": "AI &amp; OpenAI Integration Project",
+        "timestamp": "2026-09-17 12:50:36",
+        "ip": "::1"
+    },
+    {
+        "id": "msg_6aabc65ad027b",
+        "name": "ASDF",
+        "email": "asd@gmail.com",
+        "subject": "Headless CMS &amp; Strapi Architecture",
+        "message": "Headless CMS &amp; Strapi Architecture",
+        "timestamp": "2026-09-17 12:52:10",
+        "ip": "::1"
+    },
+    {
+        "id": "msg_6aabc6b8c9451",
+        "name": "Rahul",
+        "email": "sudipan@gmail.com",
+        "subject": "Full-Time Engineering Role",
+        "message": "Full-Time Engineering Role",
+        "timestamp": "2026-09-17 12:53:44",
+        "ip": "::1"
+    },
+    {
+        "id": "msg_6aabcdcfcb8a2",
+        "name": "Integration Tester",
+        "email": "test.visitor@gmail.com",
+        "subject": "End-to-End System Verification",
+        "message": "Testing contact submission logging to MySQL and live SMTP dispatch.",
+        "timestamp": "2026-09-17 13:23:59",
+        "ip": "127.0.0.1"
     }
 ]

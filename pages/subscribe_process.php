@@ -13,7 +13,11 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     exit;
 }
 
-$email = trim($_POST['email'] ?? '');
+require_once __DIR__ . '/../includes/db.php';
+
+$email  = trim($_POST['email'] ?? '');
+$source = trim($_POST['source'] ?? 'Engineering Insights Newsletter');
+$ip     = $_SERVER['REMOTE_ADDR'] ?? 'Unknown';
 
 if (empty($email) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
     http_response_code(400);
@@ -24,6 +28,10 @@ if (empty($email) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
     exit;
 }
 
+// 1. Insert into MySQL newsletter_subscribers table
+logNewsletterSubscriberDb(strtolower($email), $source, $ip);
+
+// 2. Also keep local JSON log
 $logDir = __DIR__ . '/../logs';
 if (!is_dir($logDir)) {
     @mkdir($logDir, 0777, true);
@@ -39,7 +47,7 @@ if (file_exists($subscribersFile)) {
     }
 }
 
-// Check if already subscribed
+// Check if already subscribed in file
 $alreadySubscribed = false;
 foreach ($subscribers as $sub) {
     if (isset($sub['email']) && strtolower($sub['email']) === strtolower($email)) {
@@ -50,18 +58,28 @@ foreach ($subscribers as $sub) {
 
 if (!$alreadySubscribed) {
     $subscribers[] = [
-        'email' => strtolower($email),
+        'email'         => strtolower($email),
         'subscribed_at' => date('Y-m-d H:i:s'),
-        'ip' => $_SERVER['REMOTE_ADDR'] ?? 'Unknown',
-        'source' => $_POST['source'] ?? 'Engineering Insights Newsletter'
+        'ip'            => $ip,
+        'source'        => $source
     ];
     @file_put_contents($subscribersFile, json_encode($subscribers, JSON_PRETTY_PRINT));
+
+    // 3. Send automated Welcome & Thank You email to the subscriber
+    $welcomeError = '';
+    $welcomeSent = sendNewsletterWelcomeEmail($email, $welcomeError);
+
+    if ($welcomeSent) {
+        logMailEventDb('success', $email, 'Newsletter Welcome & Thank You Email', null, $ip);
+    } else {
+        logMailEventDb('error', $email, 'Newsletter Welcome Email', $welcomeError, $ip);
+    }
 }
 
 echo json_encode([
-    'success' => true,
-    'message' => 'Welcome aboard! You are now subscribed to Engineering Insights updates.',
-    'email' => htmlspecialchars($email),
+    'success'            => true,
+    'message'            => 'Welcome aboard! A thank-you confirmation email has been sent to ' . htmlspecialchars($email) . '.',
+    'email'              => htmlspecialchars($email),
     'already_subscribed' => $alreadySubscribed
 ]);
 exit;

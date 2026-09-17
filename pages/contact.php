@@ -301,7 +301,7 @@ async function handleContactPageSubmit(e) {
     status.className = 'hidden';
 
     const formData = new FormData(form);
-    const endpoint = (typeof window !== 'undefined' && window.BASE_URL) ? `${window.BASE_URL}pages/contact_process.php` : "pages/contact_process.php";
+    const endpoint = (typeof window !== 'undefined' && window.BASE_URL) ? `${window.BASE_URL}pages/contact_process.php` : "contact_process.php";
 
     try {
         const response = await fetch(endpoint, {
@@ -311,17 +311,20 @@ async function handleContactPageSubmit(e) {
         const result = await response.json();
 
         if (result.success) {
-            status.className = 'p-4 rounded-2xl mb-6 text-xs font-semibold bg-emerald-100 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 border border-emerald-500/30 flex items-center gap-2 block animate-fadeIn';
-            status.innerHTML = `<i class="fa-solid fa-circle-check text-base text-emerald-500"></i> <span>${result.message}</span>`;
+            status.className = 'p-4 rounded-2xl mb-6 text-xs font-semibold bg-emerald-100 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 border border-emerald-500/30 flex items-center gap-2.5 block animate-fadeIn';
+            status.innerHTML = `<i class="fa-solid fa-circle-check text-base text-emerald-500 flex-shrink-0"></i> <span>${result.message}</span>`;
             form.reset();
             document.getElementById('charCount').textContent = '0 / 2000';
+        } else if (result.is_logged) {
+            status.className = 'p-4 rounded-2xl mb-6 text-xs font-medium bg-amber-100 dark:bg-amber-950/60 text-amber-800 dark:text-amber-200 border border-amber-500/30 flex items-start gap-2.5 block animate-fadeIn';
+            status.innerHTML = `<i class="fa-solid fa-circle-info text-base text-amber-500 mt-0.5 flex-shrink-0"></i> <span>${result.message}</span>`;
         } else {
-            status.className = 'p-4 rounded-2xl mb-6 text-xs font-semibold bg-red-100 dark:bg-red-950/60 text-red-700 dark:text-red-300 border border-red-500/30 flex items-center gap-2 block';
-            status.innerHTML = `<i class="fa-solid fa-circle-exclamation text-base text-red-500"></i> <span>${result.message || 'An error occurred. Please try again.'}</span>`;
+            status.className = 'p-4 rounded-2xl mb-6 text-xs font-semibold bg-red-100 dark:bg-red-950/60 text-red-700 dark:text-red-300 border border-red-500/30 flex items-center gap-2.5 block';
+            status.innerHTML = `<i class="fa-solid fa-circle-exclamation text-base text-red-500 flex-shrink-0"></i> <span>${result.message || 'An error occurred. Please try again.'}</span>`;
         }
     } catch (err) {
-        status.className = 'p-4 rounded-2xl mb-6 text-xs font-semibold bg-red-100 dark:bg-red-950/60 text-red-700 dark:text-red-300 border border-red-500/30 flex items-center gap-2 block';
-        status.innerHTML = `<i class="fa-solid fa-triangle-exclamation text-base text-red-500"></i> <span>Network error. Please email directly at <a href="mailto:sudipanmandal@gmail.com" class="underline font-bold">sudipanmandal@gmail.com</a>.</span>`;
+        status.className = 'p-4 rounded-2xl mb-6 text-xs font-semibold bg-red-100 dark:bg-red-950/60 text-red-700 dark:text-red-300 border border-red-500/30 flex items-center gap-2.5 block';
+        status.innerHTML = `<i class="fa-solid fa-triangle-exclamation text-base text-red-500 flex-shrink-0"></i> <span>Network error. Please email directly at <a href="mailto:sudipanmandal@gmail.com" class="underline font-bold">sudipanmandal@gmail.com</a>.</span>`;
     } finally {
         btn.disabled = false;
         btn.innerHTML = originalContent;
