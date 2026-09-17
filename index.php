@@ -44,7 +44,7 @@ require_once __DIR__ . '/includes/header.php';
 
         <!-- Hero Subtitle / Engineering Mindset -->
         <p class="reveal max-w-3xl text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed font-light">
-            Junior Engineer & Full Stack Developer building the <span class="font-semibold text-slate-900 dark:text-white">IMITERRA MRV Platform</span> at <span class="font-semibold text-slate-900 dark:text-white">EELAB CARBON</span>, with enterprise backend background at <span class="font-semibold text-slate-900 dark:text-white">Vxplore Technologies</span>. 
+            Junior Engineer & Full Stack Developer building the <span class="font-semibold text-slate-900 dark:text-white">MRV Platform</span> at <span class="font-semibold text-slate-900 dark:text-white">EELAB CARBON</span>, with enterprise backend background at <span class="font-semibold text-slate-900 dark:text-white">Vxplore Technologies</span>. 
             Specializing in <span class="text-purple-600 dark:text-purple-400 font-medium">Node.js, Strapi (Headless CMS), TypeScript, JavaScript, PostgreSQL, PHP 8, and RESTful APIs</span>.
         </p>
 
@@ -185,7 +185,7 @@ require_once __DIR__ . '/includes/header.php';
                     </h3>
                     <p class="text-slate-600 dark:text-slate-300 text-sm sm:text-base leading-relaxed mb-4">
                         I am a dedicated software engineer based in Kolkata specializing in scalable backend architectures, headless CMS engineering, and climate-tech data systems. 
-                        At <strong class="text-slate-900 dark:text-white">EELAB CARBON Pvt Ltd</strong>, I engineer backend systems and REST APIs for the proprietary <strong class="text-emerald-600 dark:text-emerald-400">IMITERRA MRV Platform</strong> (Measurement, Reporting, and Verification) using <strong class="text-indigo-600 dark:text-indigo-400">Node.js, Strapi Headless CMS, TypeScript, JavaScript, and PostgreSQL</strong> for Enhanced Rock Weathering (ERW) and carbon credit accounting.
+                        At <strong class="text-slate-900 dark:text-white">EELAB CARBON Pvt Ltd</strong>, I engineer backend systems and REST APIs for the proprietary <strong class="text-emerald-600 dark:text-emerald-400">MRV Platform</strong> (Measurement, Reporting, and Verification) using <strong class="text-indigo-600 dark:text-indigo-400">Node.js, Strapi Headless CMS, TypeScript, JavaScript, and PostgreSQL</strong> for Enhanced Rock Weathering (ERW) and carbon credit accounting.
                     </p>
                     <p class="text-slate-600 dark:text-slate-300 text-sm sm:text-base leading-relaxed mb-4">
                         Previously at <strong class="text-slate-900 dark:text-white">Vxplore Technologies</strong>, I built and maintained enterprise web applications using <strong class="text-purple-600 dark:text-purple-400">PHP 8 and CodeIgniter 4</strong>, adhering strictly to MVC architecture and optimizing database throughput.
@@ -297,14 +297,14 @@ require_once __DIR__ . '/includes/header.php';
                     <!-- Project Highlight Badge -->
                     <div class="mb-4 inline-flex items-center gap-2 px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs font-semibold text-slate-800 dark:text-slate-200">
                         <i class="fa-solid fa-seedling text-emerald-500"></i>
-                        <span>Project: IMITERRA MRV Platform (Measurement, Reporting & Verification)</span>
+                        <span>Project: MRV Platform (Measurement, Reporting & Verification)</span>
                     </div>
 
                     <!-- Role Achievements -->
                     <ul class="space-y-2.5 text-sm text-slate-600 dark:text-slate-300 mb-6">
                         <li class="flex items-start gap-2.5">
                             <i class="fa-solid fa-check text-emerald-600 dark:text-emerald-400 mt-1 flex-shrink-0 text-xs"></i>
-                            <span>Developing and maintaining backend services for the <strong>IMITERRA MRV Platform</strong> supporting nature-based carbon removal and Enhanced Rock Weathering (ERW).</span>
+                            <span>Developing and maintaining backend services for the <strong>MRV Platform</strong> supporting nature-based carbon removal and Enhanced Rock Weathering (ERW).</span>
                         </li>
                         <li class="flex items-start gap-2.5">
                             <i class="fa-solid fa-check text-emerald-600 dark:text-emerald-400 mt-1 flex-shrink-0 text-xs"></i>
@@ -320,7 +320,7 @@ require_once __DIR__ . '/includes/header.php';
                         </li>
                         <li class="flex items-start gap-2.5">
                             <i class="fa-solid fa-check text-emerald-600 dark:text-emerald-400 mt-1 flex-shrink-0 text-xs"></i>
-                            <span>Implementing digital reporting pipelines connecting mobile data collection tools with the central IMITERRA MRV analytical dashboard for real-time monitoring.</span>
+                            <span>Implementing digital reporting pipelines connecting mobile data collection tools with the central MRV analytical dashboard for real-time monitoring.</span>
                         </li>
                         <li class="flex items-start gap-2.5">
                             <i class="fa-solid fa-check text-emerald-600 dark:text-emerald-400 mt-1 flex-shrink-0 text-xs"></i>
@@ -336,7 +336,7 @@ require_once __DIR__ . '/includes/header.php';
                         <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">JavaScript (ES6+)</span>
                         <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">PostgreSQL</span>
                         <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">RESTful APIs</span>
-                        <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">IMITERRA MRV Platform</span>
+                        <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">MRV Platform</span>
                         <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">ERW Carbon Accounting</span>
                         <span class="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">Git</span>
                     </div>
@@ -1231,7 +1231,7 @@ require_once __DIR__ . '/includes/header.php';
                         <span class="text-[11px] font-bold uppercase tracking-wider text-slate-400 block mb-2">Quick Subject Select</span>
                         <div class="flex flex-wrap gap-1.5 text-xs">
                             <button type="button" onclick="setQuickSubject('Full-Time Engineering Role', this)" class="quick-sub-btn px-3 py-1.5 rounded-xl border border-slate-200 dark:border-slate-700 glass-card text-slate-600 dark:text-slate-300 hover:border-purple-500 hover:text-purple-600 transition">⚡ Full-Time Role</button>
-                            <button type="button" onclick="setQuickSubject('IMITERRA / Climate-Tech MRV Platform', this)" class="quick-sub-btn px-3 py-1.5 rounded-xl border border-slate-200 dark:border-slate-700 glass-card text-slate-600 dark:text-slate-300 hover:border-emerald-500 hover:text-emerald-600 transition">🌿 Climate MRV</button>
+                            <button type="button" onclick="setQuickSubject('Climate-Tech MRV Platform', this)" class="quick-sub-btn px-3 py-1.5 rounded-xl border border-slate-200 dark:border-slate-700 glass-card text-slate-600 dark:text-slate-300 hover:border-emerald-500 hover:text-emerald-600 transition">🌿 Climate MRV</button>
                             <button type="button" onclick="setQuickSubject('Strapi & Node.js Architecture', this)" class="quick-sub-btn px-3 py-1.5 rounded-xl border border-slate-200 dark:border-slate-700 glass-card text-slate-600 dark:text-slate-300 hover:border-indigo-500 hover:text-indigo-600 transition">🚀 Strapi & Node</button>
                             <button type="button" onclick="setQuickSubject('PostgreSQL / MySQL Query Optimization', this)" class="quick-sub-btn px-3 py-1.5 rounded-xl border border-slate-200 dark:border-slate-700 glass-card text-slate-600 dark:text-slate-300 hover:border-sky-500 hover:text-sky-600 transition">📊 Database Tuning</button>
                             <button type="button" onclick="setQuickSubject('General Project Collaboration', this)" class="quick-sub-btn px-3 py-1.5 rounded-xl border border-slate-200 dark:border-slate-700 glass-card text-slate-600 dark:text-slate-300 hover:border-amber-500 hover:text-amber-600 transition">💡 General</button>

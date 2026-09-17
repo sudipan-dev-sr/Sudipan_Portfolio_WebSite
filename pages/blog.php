@@ -74,10 +74,10 @@ require_once __DIR__ . '/../includes/header.php';
                         <span>•</span>
                         <span><i class="fa-solid fa-user text-purple-500"></i> Sudipan Mandal</span>
                         <span>•</span>
-                        <span class="text-emerald-600 dark:text-emerald-400 font-medium">IMITERRA Series</span>
+                        <span class="text-emerald-600 dark:text-emerald-400 font-medium">MRV Platform Series</span>
                     </div>
                     <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white tracking-tight mb-3">
-                        Architecting IMITERRA: Building a Scalable MRV Platform for Carbon Removal with Node.js & Strapi
+                        Architecting the MRV Platform: Building a Scalable System for Carbon Removal with Node.js & Strapi
                     </h2>
                     <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed mb-6">
                         An in-depth architectural breakdown of how we built the Measurement, Reporting, and Verification engine for Enhanced Rock Weathering, handling spatial soil data ingestion, PostgreSQL relational models, and audit-proof carbon calculations.
@@ -90,7 +90,7 @@ require_once __DIR__ . '/../includes/header.php';
                         <span class="px-2 py-0.5 rounded text-[11px] bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">TypeScript</span>
                         <span class="px-2 py-0.5 rounded text-[11px] bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">PostgreSQL</span>
                     </div>
-                    <a href="<?= BASE_URL ?>pages/single-blog.php?slug=architecting-imiterra-mrv-platform" class="text-xs font-bold text-emerald-600 dark:text-emerald-400 hover:underline flex items-center gap-1.5">
+                    <a href="<?= BASE_URL ?>pages/single-blog.php?slug=architecting-mrv-platform" class="text-xs font-bold text-emerald-600 dark:text-emerald-400 hover:underline flex items-center gap-1.5">
                         <span>Read Article</span>
                         <i class="fa-solid fa-arrow-right text-[10px]"></i>
                     </a>

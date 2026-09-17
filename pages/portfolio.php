@@ -57,10 +57,10 @@ require_once __DIR__ . '/../includes/header.php';
 
         <div id="projectsPortfolioGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-            <!-- Project 1: IMITERRA MRV Platform (Flagship) -->
+            <!-- Project 1: MRV Platform (Flagship) -->
             <div class="portfolio-item-card reveal glass-card rounded-3xl border border-slate-200/80 dark:border-slate-800 overflow-hidden flex flex-col justify-between glass-card-hover group" 
                  data-category="climate backend" 
-                 data-keywords="imiterra mrv platform eelab carbon node.js strapi typescript javascript postgresql spatial gis erw carbon credits">
+                 data-keywords="mrv platform eelab carbon node.js strapi typescript javascript postgresql spatial gis erw carbon credits">
                 <div>
                     <!-- Banner Visual -->
                     <div class="relative h-48 bg-gradient-to-tr from-emerald-950/80 via-slate-900 to-indigo-950 p-6 flex flex-col justify-between overflow-hidden">
@@ -76,7 +76,7 @@ require_once __DIR__ . '/../includes/header.php';
                         </div>
                         <div class="relative z-10">
                             <span class="text-xs text-emerald-400 font-semibold tracking-wider uppercase">EELAB CARBON Pvt Ltd</span>
-                            <h3 class="text-xl font-bold text-white tracking-tight mt-0.5">IMITERRA MRV Platform</h3>
+                            <h3 class="text-xl font-bold text-white tracking-tight mt-0.5">MRV Platform</h3>
                         </div>
                     </div>
 
@@ -363,11 +363,11 @@ require_once __DIR__ . '/../includes/header.php';
             Interested in the Architecture Behind These Projects?
         </h2>
         <p class="text-slate-600 dark:text-slate-300 text-xs sm:text-sm mt-3 max-w-xl mx-auto leading-relaxed">
-            Read the detailed technical breakdown of the flagship <strong>IMITERRA MRV Platform</strong> or discuss your custom engineering requirements.
+            Read the detailed technical breakdown of the flagship <strong>MRV Platform</strong> or discuss your custom engineering requirements.
         </p>
         <div class="flex flex-wrap items-center justify-center gap-4 mt-8">
             <a href="<?= BASE_URL ?>pages/portfolio-details.php" class="btn-primary">
-                <span>Explore IMITERRA Case Study</span>
+                <span>Explore MRV Platform Case Study</span>
                 <i class="fa-solid fa-arrow-right text-xs"></i>
             </a>
             <a href="<?= BASE_URL ?>pages/contact.php" class="btn-outline">

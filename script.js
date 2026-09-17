@@ -85,7 +85,7 @@ window.addEventListener("scroll", handleScroll);
 // ================= TYPEWRITER ANIMATION =================
 const typewriterPhrases = [
     "Junior Engineer @ EELAB CARBON",
-    "IMITERRA MRV Platform Engineer",
+    "MRV Platform Engineer",
     "Node.js, Strapi & TypeScript Developer",
     "Full Stack Web Developer",
     "PostgreSQL & MySQL Specialist",

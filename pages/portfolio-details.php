@@ -1,5 +1,5 @@
 <?php
-$pageTitle = "Case Study: IMITERRA MRV Platform | Sudipan Mandal";
+$pageTitle = "Case Study: MRV Platform | Sudipan Mandal";
 require_once __DIR__ . '/../includes/header.php';
 ?>
 
@@ -18,7 +18,7 @@ require_once __DIR__ . '/../includes/header.php';
             <i class="fa-solid fa-chevron-right text-[9px] text-slate-400"></i>
             <a href="<?= BASE_URL ?>pages/portfolio.php" class="hover:text-purple-600 dark:hover:text-purple-400 transition">Portfolio</a>
             <i class="fa-solid fa-chevron-right text-[9px] text-slate-400"></i>
-            <span class="text-emerald-600 dark:text-emerald-400">IMITERRA MRV Platform</span>
+            <span class="text-emerald-600 dark:text-emerald-400">MRV Platform</span>
         </nav>
 
         <div class="flex flex-wrap items-center gap-3 mb-4">
@@ -32,7 +32,7 @@ require_once __DIR__ . '/../includes/header.php';
         </div>
 
         <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 dark:text-white tracking-tight leading-tight">
-            IMITERRA <span class="gradient-text">MRV Platform</span>
+            MRV <span class="gradient-text">Platform</span>
         </h1>
         <p class="mt-4 text-slate-600 dark:text-slate-300 max-w-3xl text-sm sm:text-lg leading-relaxed">
             Measurement, Reporting, and Verification system engineering for Enhanced Rock Weathering (ERW) and soil carbon sequestration accounting.
@@ -78,7 +78,7 @@ require_once __DIR__ . '/../includes/header.php';
                 System Architecture Overview
             </h2>
             <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed mb-8">
-                The IMITERRA platform collects, validates, and processes multi-source field data—including soil sampling chemistry, GPS polygon boundaries, and geochemical weathering models—into verified carbon credits.
+                The MRV platform collects, validates, and processes multi-source field data—including soil sampling chemistry, GPS polygon boundaries, and geochemical weathering models—into verified carbon credits.
             </p>
 
             <!-- 4 Architecture Blocks -->
@@ -225,7 +225,7 @@ require_once __DIR__ . '/../includes/header.php';
             <!-- Tab 4: ERW Calculations -->
             <div id="tab-erw" class="tech-tab-pane hidden space-y-4 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
                 <p>
-                    Enhanced Rock Weathering (ERW) accelerates natural silicate weathering by spreading finely crushed basalt over croplands. The IMITERRA MRV platform quantifies atmospheric CO₂ captured as dissolved inorganic carbon (bicarbonates) based on geochemical parameters.
+                    Enhanced Rock Weathering (ERW) accelerates natural silicate weathering by spreading finely crushed basalt over croplands. The MRV platform quantifies atmospheric CO₂ captured as dissolved inorganic carbon (bicarbonates) based on geochemical parameters.
                 </p>
             </div>
         </div>
