@@ -4,7 +4,50 @@
  * Connects to MySQL (sudipan_portfolio) and manages tables and log synchronization.
  */
 
-require_once __DIR__ . '/mail_config.php';
+if (file_exists(__DIR__ . '/mail_config.php')) {
+    require_once __DIR__ . '/mail_config.php';
+}
+
+// Load .env if present (in case mail_config.php is not loaded)
+if (!function_exists('loadPortfolioEnv')) {
+    function loadPortfolioEnv($filePath) {
+        if (!file_exists($filePath)) {
+            return;
+        }
+        $lines = file($filePath, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+        foreach ($lines as $line) {
+            $line = trim($line);
+            if (empty($line) || str_starts_with($line, '#')) {
+                continue;
+            }
+            if (strpos($line, '=') !== false) {
+                [$key, $value] = explode('=', $line, 2);
+                $key = trim($key);
+                $value = trim($value, " \t\n\r\0\x0B\"'");
+                if (!array_key_exists($key, $_ENV)) {
+                    putenv("$key=$value");
+                    $_ENV[$key] = $value;
+                }
+            }
+        }
+    }
+}
+
+loadPortfolioEnv(__DIR__ . '/../.env');
+
+// Helper to get environment variable with fallback
+if (!function_exists('getPortfolioConfig')) {
+    function getPortfolioConfig($key, $default = '') {
+        $val = getenv($key);
+        if ($val !== false && $val !== '') {
+            return $val;
+        }
+        if (isset($_ENV[$key]) && $_ENV[$key] !== '') {
+            return $_ENV[$key];
+        }
+        return $default;
+    }
+}
 
 define('DB_HOST', getPortfolioConfig('DB_HOST', '127.0.0.1'));
 define('DB_NAME', getPortfolioConfig('DB_NAME', 'sudipan_portfolio'));

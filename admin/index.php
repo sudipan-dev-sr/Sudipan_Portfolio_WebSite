@@ -8,7 +8,7 @@ requireAdminAuth();
 
 $pdo = getDbConnection();
 if (!$pdo) {
-    die("Database connection failed. Please ensure MySQL is running in XAMPP.");
+    die("Database connection failed. Please check MySQL status and verify credentials in .env (DB_HOST, DB_NAME, DB_USER, DB_PASS).");
 }
 
 $admin = getLoggedInAdmin();

@@ -14,7 +14,7 @@ if (isAdminLoggedIn()) {
 $error = '';
 $usernameInput = '';
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+if (($_SERVER['REQUEST_METHOD'] ?? '') === 'POST') {
     $usernameInput = trim($_POST['username'] ?? '');
     $passwordInput = trim($_POST['password'] ?? '');
 
@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } else {
         $pdo = getDbConnection();
         if (!$pdo) {
-            $error = 'Database connection failed. Please ensure MySQL is running in XAMPP.';
+            $error = 'Database connection failed. Please check MySQL status and verify credentials in .env (DB_HOST, DB_NAME, DB_USER, DB_PASS).';
         } else {
             try {
                 $stmt = $pdo->prepare("SELECT * FROM `admin_users` WHERE `username` = ? OR `email` = ? LIMIT 1");

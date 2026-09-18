@@ -4,7 +4,7 @@ if (!defined('BASE_URL')) {
         $scriptPath = str_replace('\\', '/', $_SERVER['SCRIPT_NAME']);
         $dir = dirname($scriptPath);
         $dir = str_replace('\\', '/', $dir);
-        $dir = preg_replace('#/(pages|includes)/?$#', '', $dir);
+        $dir = preg_replace('#/(pages|includes|admin)/?$#', '', $dir);
         $base = '/' . ltrim(rtrim($dir, '/'), '/') . '/';
         if ($base === '//' || $base === '/./') {
             $base = '/';
