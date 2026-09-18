@@ -1,7 +1,4 @@
 <?php
-/**
- * Admin API Endpoint for Dashboard Controls
- */
 
 require_once __DIR__ . '/auth.php';
 requireAdminAuth();
