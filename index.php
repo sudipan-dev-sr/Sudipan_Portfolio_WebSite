@@ -33,7 +33,7 @@ require_once __DIR__ . '/includes/header.php';
         <div class="reveal flex flex-col items-center gap-2">
             <h2 class="text-lg sm:text-xl md:text-2xl font-medium text-slate-600 dark:text-slate-300 flex items-center gap-2">
                 <span>Hi, I'm</span>
-                <span class="font-bold text-slate-900 dark:text-white">Sudipan Mandal</span>
+                <span class="font-bold text-slate-900 dark:text-white">Sudipan Mandal (SR) </span>
                 <img src="<?= BASE_URL ?>assets/hand-icon.png" class="w-6 inline-block animate-bounce" alt="wave" />
             </h2>
             <div class="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight min-h-[1.3em]">
